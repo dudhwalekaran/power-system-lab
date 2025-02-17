@@ -50,23 +50,6 @@ export default function VideosPage() {
     });
   };
 
-  const handleSearch = async () => {
-    if (!searchTerm) return;  // Don't send empty queries
-
-    setLoading(true);  // Start loading state
-
-    try {
-      const response = await fetch(`/api/search?search=${searchTerm}`);  // Call the API with search term
-      const data = await response.json();
-      setResults(data);  // Update the state with fetched results
-    } catch (error) {
-      console.error('Error fetching search results:', error);
-      setResults([]);  // Clear results if an error occurs
-    } finally {
-      setLoading(false);  // Set loading state back to false once done
-    }
-  };
-
   // Helper function to render video cards
   const renderVideos = (videoList) => {
     return videoList.map((video, index) => (
@@ -134,14 +117,6 @@ export default function VideosPage() {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}  // Update search term on input change
       />
-
-      <button
-        onClick={handleSearch}
-        className="search-button"
-        disabled={loading}  // Disable button while loading
-      >
-        {loading ? 'Searching...' : 'Search'}
-      </button>
       </div>
 
       {/* Subject Categories */}
