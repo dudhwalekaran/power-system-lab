@@ -1,0 +1,133 @@
+"use client";
+import { useState } from "react";
+
+export default function UploadVideoPage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    title: "",
+    description: "",
+    professorName: "",
+    videoLink: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("/api/upload-video", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        alert(data.message || "Video uploaded successfully!");
+        setFormData({ title: "", description: "", professorName: "", videoLink: "" });
+        setIsModalOpen(false); // Close the modal after successful submission
+      } else {
+        alert(data.message || "Failed to upload video");
+      }
+    } catch (error) {
+      console.error("Error uploading video:", error);
+      alert("Something went wrong!");
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
+      <h1 className="text-3xl font-bold mb-4">Welcome to the Video Upload Page</h1>
+      <p className="text-lg text-gray-600 mb-8">
+        Here, you can upload metadata for your educational videos. Simply click the "Upload Video" button and fill out the form with details about the video.
+      </p>
+      
+      <button
+        onClick={() => setIsModalOpen(true)}
+        className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+      >
+        Upload Video
+      </button>
+
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+          onClick={() => setIsModalOpen(false)} // Close the modal when clicking outside
+        >
+          <div
+            className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md"
+            onClick={(e) => e.stopPropagation()} // Prevent modal close on inner content click
+          >
+            <h2 className="text-2xl font-bold mb-4">Upload Video Metadata</h2>
+            <form onSubmit={handleFormSubmit}>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium">Title</label>
+                <input
+                  type="text"
+                  name="title"
+                  value={formData.title}
+                  onChange={handleInputChange}
+                  className="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium">Description</label>
+                <textarea
+                  name="description"
+                  value={formData.description}
+                  onChange={handleInputChange}
+                  className="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium">Professor Name</label>
+                <input
+                  type="text"
+                  name="professorName"
+                  value={formData.professorName}
+                  onChange={handleInputChange}
+                  className="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-gray-700 font-medium">Video Link</label>
+                <input
+                  type="url"
+                  name="videoLink"
+                  value={formData.videoLink}
+                  onChange={handleInputChange}
+                  className="w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  required
+                />
+              </div>
+              <div className="flex justify-end">
+                <button
+                  type="button"
+                  onClick={() => setIsModalOpen(false)}
+                  className="mr-4 bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

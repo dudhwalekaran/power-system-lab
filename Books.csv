@@ -1,0 +1,237 @@
+Book Name,Subject,Edition ,Section ,Copies,Id,Author
+Electrical Power System,Power System Analysis,6th,,2,523,C. L. Wadhwa
+Electrical Power System,Power System Analysis,2nd,,1,642,C. L. Wadhwa
+Modern Power System Analysis,Power System Analysis,3rd,,1,643,Nagrath and Kothari
+Modern Power System Analysis,Power System Analysis,2rd,,1,644,Nagrath and Kothari
+Modern Power System Analysis,Power System Analysis,1st,,1,645,Nagrath and Kothari
+Modern Power System Analysis,Power System Analysis,4th,,1,646,Nagrath and Kothari
+Power System Analysis,Power System Analysis,2nd,,2,647,Charles A. Gross
+Modern Power System Analysis,Power System Analysis,3rd,,2,648,Turan Gonen
+Power System Analysis,Power System Analysis,2nd,,1,649,R. Bergen
+Elements of Power System Analysis,Power System Analysis,1st,,1,650,William D. Stevenson Jr
+Elements of Power System Analysis,Power System Analysis,3d,,1,651,William D. Stevenson Jr
+Elements of Power System Analysis,Power System Analysis,-,,1,652,William D. Stevenson Jr
+Power System Analysis and Design,Power System Analysis,-,,1,653,J Duncan Glover and Sarma
+Power System Analysis,Power System Analysis,1st,,1,654,Granger and Stevenson
+Power System Analysis,Power System Analysis,2nd,,2,655,N. V. Ramana
+Advanced power system analysis and dynamics,Power System Analysis,3rd,,2,656,L. P. Singh
+Advanced power system analysis and dynamics,Power System Analysis,,,2,657,L. P. Singh
+Advanced power system analysis and dynamics,Power System Analysis,,,1,658,L. P. Singh
+Power System Engineering,Power System Analysis,,,1,659,Nagrath and Kothari
+Symmetrical Components for Power System Engineering,Power System Analysis,,,1,660,J Lewis Blackburn
+Electrical Energy Systems Theory,Power System Analysis,,,,661,Olle Elgerd
+Electrical Power Generation Transmission and Distribution,Power System Analysis,,,,4353,S. N. Singh
+,,,,,,
+,,,,,,
+Computer Techniques in Power System Analysis,CAPSA,1st,,1,662,M. A. Pai
+Computer Techniques in Power System Analysis,CAPSA,2nd,,1,663,M. A. Pai
+Computer Techniques in Power System Analysis,CAPSA,3rd,,1,664,M. A. Pai
+Computer Techniques in Power System Analysis,CAPSA,3rd,,1,665,Pai and Chatterjee
+Computer Aided Power System Operation and Analysis,CAPSA,,,1,666,N. A. Dhar
+Computer Aided Power System Analsis and Control,CAPSA,,,1,667,"A. k. Mahalanabis, D. P. Kothari, S I Ahson"
+Computer Aided Power System Analsis,CAPSA,,,2,668,George L Kusic
+Computer Methods in Power System Analysis,CAPSA,,,1,669,"Glenn W. Stagg, Ahmed H. El-Abiad"
+,,,,,,
+Power System Dynamics and Stability,Dynamics and Transients,,,1,671,"P.W. Sauer, M. A. Pai"
+Power System Stability and Control,Dynamics and Transients,,,2,672,Prabha Kundur
+Power System Stability,Dynamics and Transients,,,1,673,"L. Z. Racz, B. Bokay"
+Power System Stability Vol.3,Dynamics and Transients,,,1,674,Kimbark
+Power Sytem Dynamics Stability and Control,Dynamics and Transients,,,3,675,K. R. Padiyar
+Power System Stability Vol.2,Dynamics and Transients,,,1,676,Kimbark
+Operation Control in Power System,Dynamics and Transients,,,1,677,P. S. R. Murty
+Automatic Power System Control,Dynamics and Transients,,,1,678,V. A. Venikov
+Transient Processes in Electrical Power System,Dynamics and Transients,,,2,679,V. A. Venikov
+Power System Electromagnetic Transient Simulation,Dynamics and Transients,,,1,680,"Watson, Arrillaga"
+Automation in Electrical Power System,Dynamics and Transients,,,1,681,A. Barzam
+Electrical Transient in Power System,Dynamics and Transients,,,1,682,Allen Greenwood
+Power System Optimization,Dynamics and Transients,,,1,683,Kothari and Dhillon
+Optimization of Power System Operation,Dynamics and Transients,,,1,684,Gizhong Zhu
+Modern Optimization Techniques in Power System,Dynamics and Transients,,,1,685,Yong-Huasong
+Power System Voltage Stability,Dynamics and Transients,,,1,686,Carson W. Taylor
+Computer Modeling of Electrical Power System,Dynamics and Transients,,,2,687,"Arrillaga, Watson"
+Voltage Stability of Electric Power System (Photocopy),Dynamics and Transients,,,1,688,Cutsen Vournas
+Transients in Linear Systems,Dynamics and Transients,,,,689,Gardner and Barnes
+,,,,,,
+,,,,,,
+Swithgear Protection and Power Sytem,Protection ,,,1,690,Sunil S. Rao
+Power System Protection and Switchgear,Protection ,,1st,1,691,"Badriram, Vishwakarma"
+Power System Protection and Switchgear,Protection ,,2nd,1,692,"Badriram, Vishwakarma"
+Protective Relays,Protection ,,,1,693,Warrington
+Power System Protection and Switchgear,Protection ,,,1,694,"B Ravindranath, M. Chander"
+Power System Protection and Communication,Protection ,,,1,695,"Kalam, Kothari"
+The Art and Science Of Protective Relay,Protection ,,,1,696,Crussell Mason
+Power System Protection and Switchgear,Protection ,,,1,697,"Oza, Nair, Mehta, Makwana"
+Power System Protection and Switchgear (Photocopy),Protection ,,,1,698,"Oza, Nair, Mehta, Makwana"
+Power System Protection,Protection ,,,1,699,"Bate, Oza, Nair"
+,,,,,,
+Economics of Power Systems,Power system economics,,,1,701,Kirchmayer
+Power System Economics,Power system economics,,,1,702,Wangensteen
+Power System Economics (Photocopy),Power system economics,,,1,703,Stevenstoft
+Restructured Electrical Power System (Photocopy),Power system economics,,,1,704,Mohd. Shahidehpour
+Power System Structuring and Deregulation (Photocopy),Power system economics,,,1,705,"Loi, Lei, Lai"
+Operation of Restructured Power System (Photocopy),Power system economics,,,1,706,"Bhattacharya, Bollen, Daalder"
+Power System Planning,Power system economics,,,1,707,Robert L. Sullivan
+Intermediate Microeconomics,Power system economics,,,,708,
+,,,,,709,
+HVDC power transmission system,HVDC,,1st,2,710,K. R. Padiyar
+HVDC power transmission system,HVDC,,2rd,2,711,K. R. Padiyar
+HVDC Transmission (Photocopy),HVDC,,-,1,712,-
+FACTS Controllers and Power Transmission Distribution,HVDC,,1st,1,713,K. R. Padiyar
+FACTS Controllers and Power Transmission Distribution,HVDC,,2nd,1,714,K. R. Padiyar
+Power Electronic Control in Electric Systems (Photocopy),HVDC,,,1,715,"Acha, Agelidis, Anaya-lara, Miller"
+Raactive Power Control in Electric Systems (Photocopy),HVDC,,,1,716,T J E Miller
+Extra High Voltage AC transmission Engineering,HVDC,,,1,717,Begamudre
+Computation Methods of Electrical Power System,HVDC,,,1,718,Mariesa Crow
+Computation Methods of Electrical Power System (Photocopy),HVDC,,,1,719,Mariesa Crow
+,,,,,720,
+Calculus,Mathematics,,9th,1,721,"Thomas, Finney"
+Operational Mathematics,Mathematics,,,1,722,R V Churchill
+Problems in Calculus of one Variable,Mathematics,,,1,723,I A Maron
+Numerical Methods for Engineers,Mathematics,,5th,1,724,"Chapra, Canale"
+Optimization and Probability in Systems Engineering,Mathematics,,,1,725,Rau
+Non-Linear Programming Theory and Algorithms,Mathematics,,2nd ,2,726,"Bazaraa, Sherali, Shetty"
+Numerical Methods in Fortran,Mathematics,,,1,727,"Mccormick, Salvadori"
+Linear Algebra and its Application (photocopy),Mathematics,,1st,1,728,Gilbert Strangg
+Linear Algebra and its Application,Mathematics,,4th,1,729,Gilbert Strangg
+Numerical Methods in Engineering,Mathematics,,,1,730,Sal
+Numerical Methods,Mathematics,,,1,731,John H  Mathhews
+Matrix Computer Methods in Engineering,Mathematics,,,1,732,Pipes Hovanessian
+Introduction to Numerical Analysis,Mathematics,,,1,733,Hil
+Numerical Methods in Extremal Problems,Mathematics,,,1,734,"Pshenishny, Danilin"
+Optimization Methods for Engineering Design,Mathematics,,,1,735,Addison Wesley
+Mathematics,Mathematics,,,1,736,"Gusav, Mordkovich"
+Linear Algebra and Matrix Theory (photocopy),Mathematics,,,1,737,"Jimmie, Linda Gilbert"
+Introduction to Matrix Analysis,Mathematics,,,1,738,Bellman
+Introduction to Linear System Theory,Mathematics,,,1,739,Chen
+Optimization Used to Personal Computers,Mathematics,,,1,740,Cuthbert
+Operational Calculus,Mathematics,,,1,741,"Van-der-Pol, Bremmer"
+Advanced Engineering Mathematics,Mathematics,,8th,1,742,Kreyszij
+Advanced Engineering Mathematics,Mathematics,,6th,1,743,Kreyszij
+Linear Algebra,Mathematics,,2nd,1,744,"Kwak, Hong"
+Non-parametric Statistics,Mathematics,,,1,745,"Sidney, Siegel"
+Probability Theory and Mathematical Statistics,Mathematics,,,1,746,G. Klimov
+A course in Probability Theory,Mathematics,,2nd,1,747,Kai Lai Chung
+An Introduction to Probability Theory and its Applications,Mathematics,,2nd,1,748,Feller
+Stochastic Processes,Mathematics,,2nd,1,749,Ross
+Operations Resesarch,Mathematics,,8th,1,750,Hamdy A Taha
+Matrix Computations(Photocopy),Mathematics,,3rd,1,751,"Golub, Van Loan"
+Problems and Excercises in the Calculus of Variations,Mathematics,,,1,752,"Krasnov, Makarenko and Kiselev"
+Sadhana 1994 (photocopy),Mathematics,,,1,753,
+,,,,,754,
+Measurement Systems,Electrical grid/ Measurement/ design/ control (Miscellaneous),,4th,1,755,Doebelin
+Measurement Systems,Electrical grid/ Measurement/ design/ control (Miscellaneous),,5th,1,756,Doebelin and Manik
+Instrumentation Measurement and Feedback,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,757,Barry E Jones
+Microgrids and Active Power Distribution Networks(Photocopy),Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,758,"Chowdhury, Chowdhury and Crowley"
+Power Distribution Planning Reference Book,Electrical grid/ Measurement/ design/ control (Miscellaneous),,2nd,1,759,Willis
+Grid Security and Management,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,760,P K Shetty and V K Agarwal
+Elements of Electrical Power System Design,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,761,Deshpande
+Electrical Design Estimating and Costing,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,762,"Raina, Bhattacharya"
+Construction of Power Transmission Lines and Substation,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,763,F. Magidin
+Modern Power Generation Practice,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,764,"Oza, Makwana"
+Electrical Control Equipment,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,765,L Rodstein
+Power Station Simulaors,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,766,D Zanobetti
+Science and Technology of Photovoltaics,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,767,P Jayarama Reddy
+Generation Distribution and Utilization of Electrical Energy,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,768,Wadhwa
+Power Quality Problems and Solutions,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,769,Cobben
+Electricity Reforms and Green Power Development,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,770,"Deo, Modak"
+Wind Power Development in India,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,771,Pillai
+Gathering Renewable Energy in Electrical Networks,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,772,Bodger  and Arrillaga
+Wind Energy Systems and its Applications,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,773,Kothari and Umashankar
+Power System Capacitors,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,774,Natarajan
+Electric Networks,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,775,Mircea Eremia
+Energy for Growth and Sustainability,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,776,
+Power System Control Technology,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,777,H. K . Messerle
+Calculations and Programs for Power System Networks,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,778,Y. Wallach
+Compendium of Technical Papers,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,779,
+Cybernetics and Electric Power Systems,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,2,780,Kuznetsov
+Microturbine Generator,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,781,Hamilton
+Semiconductor Circuit Approximations,Electrical grid/ Measurement/ design/ control (Miscellaneous),,4th,1,782,Malvino
+Analysis of Linear Systems,Electrical grid/ Measurement/ design/ control (Miscellaneous),,,1,783,David Cheng
+,,,,,784,
+Control Engineering,Controls,,,1,785,"Rao, Chennavenkatesh"
+Control Systems,Controls,2nd,,1,786,Gopal
+Control Systems,Controls,,,1,787,Manik
+Automatic Control System,Controls,1st,,1,788,Bejamin C. Kuo
+Automatic Control System,Controls,7th,,1,789,Bejamin C. Kuo
+Modern Control engineering,Controls,4th,,1,790,Ogata
+Control System Engineering,Controls,3rd,,1,791,Nise
+Modern Control System Theory,Controls,1st,,1,792,Gopal
+Introduction to Electronic Control Engineering,Controls,,,1,793,"Frohr, Orttenburger"
+,,,,,794,
+Digital Communication,Digital Communications,4th,,1,795,Proakis
+Communication System,Digital Communications,4th,,1,796,"Carlson, Crilly, Rutledge"
+Communication Systems,Digital Communications,5th,,1,797,"Haykin, Moher"
+Digital Communication,Digital Communications,,,1,798,Haykin
+Communication System,Digital Communications,,,1,799,Haykin
+Electronic Communication System,Digital Communications,2nd,,1,800,Kennedy
+,,,,,801,
+Signals and Systems,Signals and Systems,2nd,,2,802,"Oppenhiem, Willsky, Nawab"
+Signals and Systems,Signals and Systems,,,1,803,"Rao, Ali"
+Digital Signal Processing,Signals and Systems,,,1,804,"Proakis, Manolakis, Sharma"
+Digital Signal Processing,Signals and Systems,3rd,,2,805,"Proakis, Manolakis"
+Digital Filters Analysis and Design,Signals and Systems,,,1,806,Andreas Antonio
+Digital Signal Processing,Signals and Systems,4th,,1,807,P Ramesh Babu
+Adaptive Filter Theory,Signals and Systems,4th,,1,808,Haykin
+,,,,,809,
+"Microprocessor Architecture, Programming and Application 8085",Microprocessor ,,,1,810,Gaonkar
+Introduction to Microprocessor,Microprocessor ,,,1,811,Mathur
+8051 Microcontroller and Embedded systems,Microprocessor ,,,1,812,"Mazidi, Mazidi, Mckinlay"
+Microcomputer systems 8086 Family,Microprocessor ,,,1,813,"Liu, Gibson"
+Embedded System Design using TIMSP430 Series,Microprocessor ,,,,814,Chris Nagy
+,,,,,815,
+Elctrical Machines Part 3,Machines,,,1,816,"Bakshi, Bakshi"
+Electrical Machines,Machines,,,3,817,"Kothari, Nagrath"
+Electrical Machines and Power System Vol.1,Machines,1st,,1,818,Nasar
+Electrical Machines,Machines,,,1,819,"Kothari, Nagrath"
+Electrical Machines,Machines,2nd,,1,820,"Fitzjerald, Kingsley and Clemens"
+Finite element Analysis of Electrical Machines,Machines,,,1,821,Salon
+Electrical Machine Design,Machines,,,1,822,Balbir Singh
+Electrical Machines,Machines,,,1,823,L. Piotrovsky
+A course in Electrical Machinery Experiments,Machines,,,1,824,"Kohli, Jain"
+Modern Power Eletronics and Drives,Machines,,,2,825,Bose
+Principle of Electric Machines and Power Electronics,Machines,,,2,826,P. C. Sen
+A first Course on Electric Drives,Machines,,,3,827,Pillai
+Electric Drives,Machines,2nd,,3,828,Dubey
+Control Of Electric Drives,Machines,2nd,,1,829,Leonhard
+Analysis of Electric Machinery And Drive Systems,Machines,3rd,,1,830,"Krause, Wasynczuk, Sudhoff"
+Electric Drives,Machines,2nd,,1,831,"Jacob, Feinberg"
+,,,,,832,
+Power Electronics,Power Electronics ,,,1,833,Bradley
+"Thyristors , Theory and its Applications",Power Electronics ,2nd,,1,834,"Sugandhi, Sugandhi"
+Switching Circuits,Power Electronics ,,,1,835,"Addison, Wesley"
+Power Electronics,Power Electronics ,3rd,,1,836,Rashid
+Power Electronics,Power Electronics ,1st,,1,837,"Ned Mohan, Undeland, Riobbins"
+Power Electronics,Power Electronics ,3rd,,1,838,Lander
+Power Electronics,Power Electronics ,2nd,,1,839,Rashid
+Simulation Of Power Electronic Circuits,Power Electronics ,,,1,840,"Patil, Ramnarayanan, Ranganathan"
+Pulsewidth Modulation for Power Electronics,Power Electronics ,,,1,841,"Holmes, Lipo"
+Electronics-I with Practicals,Power Electronics ,,,1,842,Karandikar
+Power Electronics,Power Electronics ,,,2,843,P. C. Sen
+,,,,,844,
+Numerical Recipes in C,Computer Programming,2nd,,3,845,"Press, Teukolsky, Vellerling, Flanerey"
+Let Us C++,,,,1,846,Yashwant Kanetkar
+Programming: Principles and Practice using C++,,2nd,,1,847,"Addison, Wesley"
+Programming: Principles and Practice using C++,,4th,,1,848,"Addison, Wesley"
+C++ FAQs,,2nd,,1,849,"Cline, Lomow, Girow"
+Object Oriented Programming with C++,,3rd,,1,850,Balagurusamy
+Let Us C,,8th,,1,851,Yashwant Kanetkar
+Let Us C,,6th,,1,852,Yashwant Kanetkar
+Turbo C,,,,1,853,Borland
+How to Program C,,7th,,1,854,"Deitel, Dietel"
+The art of Computer Programming Vol.2,,3rd,,1,855,Knuth
+The art of Computer Programming Vol.3,,2nd,,1,856,Knuth
+Operating Systems,,,,1,857,Milenkovic
+Window X,,2nd,,1,858,Barkakati
+Data Mining,,,,1,859,Dunham
+Pattern Recognition and Image Analysis,,,,1,860,"Gose, Johnson Baugh, Jost"
+Switching and Finite Automatum Theory,,2nd,,1,861,Kohavi
+Computer Programming made simple,,2nd,,1,862,Maynard
+Funadamentals of Database system,,4th,,1,863,"Elmasri, Navathe"
+Data Structure and Algorithmic Thinking in Python,,,,1,864,Narasimha Karumanchi
+Unofficial Guide to Ethical hacking,,,,1,865,Fadia
+Operating Systems,,,,1,866,Dhamdhere
+MatLab Programming for Eigen Values,,,,1,867,Chapman
+Parallel Computing,,,,1,868,M. R. Bhujade
+Principles of artificial Intelligence,,,,1,869,Nilsson
+System Simulation with Digital Computer,,,,1,870,Deo
+Computer Networks,,5th,,1,871,"Tanenbaum, Wetherall"

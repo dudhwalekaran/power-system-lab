@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    api: {
+      bodyParser: false, // Disable default body parser for file uploads
+    },
+  };
+  
+  export default nextConfig;
+  
