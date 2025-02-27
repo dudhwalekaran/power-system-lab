@@ -82,13 +82,13 @@ const Header = ({ toggleSidebar }) => {
               Softwares
             </Link>
             <Link
-              href="educational-videos"
+              href="/educational-videos"
               className="block text-white py-2 px-4 hover:bg-gray-700"
             >
               Educational Videos
             </Link>
             <Link
-              href="http://127.0.0.1:8000/"
+              href="https://mkdocs-three.vercel.app/"
               className="block text-white py-2 px-4 hover:bg-gray-700"
               target="_blank"
             >
@@ -222,14 +222,9 @@ export default function Layout({ children }) {
     "/projects",
     "/lab-resources",
     "/home",
-    "/books",
     "/equipments",
     "/resources",
-    "/tasks",
-    "/tools",
-    "/homepage",
     "/all-projects",
-    "/trial",
     "/login-request",
     "/all-task",
     "/reserved-equip",
