@@ -3,18 +3,6 @@ import { MongoClient } from "mongodb";
 const CLOUDINARY_URL = "https://api.cloudinary.com/v1_1/dipmjt9ta/video/upload";
 const UPLOAD_PRESET = "pslab_videos";
 
-// MongoDB Connection
-const client = new MongoClient(process.env.MONGODB_URI);
-let db;
-
-async function connectToDB() {
-  if (!db) {
-    await client.connect();
-    db = client.db("pslab");  // Replace with your DB name
-  }
-  return db;
-}
-
 async function fetchWithTimeout(resource, options = {}) {
   const { timeout = 60000 } = options;
   const controller = new AbortController();
@@ -24,13 +12,12 @@ async function fetchWithTimeout(resource, options = {}) {
   return response;
 }
 
-// Helper function to upload video to Cloudinary
 async function uploadToCloudinary(file) {
   const videoFileBlob = new Blob([await file.arrayBuffer()], { type: file.type });
   const formData = new FormData();
   formData.append("file", videoFileBlob);
   formData.append("upload_preset", UPLOAD_PRESET);
-  formData.append("chunk_size", 6000000); // 6MB chunks
+  formData.append("chunk_size", 6000000);
 
   const response = await fetchWithTimeout(CLOUDINARY_URL, { method: "POST", body: formData, timeout: 120000 });
   const data = await response.json();
@@ -39,9 +26,17 @@ async function uploadToCloudinary(file) {
   return data.secure_url;
 }
 
-// Main POST handler
+export const dynamic = 'force-dynamic';
+
 export async function POST(req) {
   try {
+    if (!process.env.MONGODB_URI) {
+      throw new Error("MONGODB_URI is not defined");
+    }
+    const client = new MongoClient(process.env.MONGODB_URI);
+    await client.connect();
+    const db = client.db("pslab");
+
     const formData = await req.formData();
     const title = formData.get("title");
     const description = formData.get("description");
@@ -49,7 +44,7 @@ export async function POST(req) {
     let videoLink = formData.get("videoLink");
     const videoFile = formData.get("videoFile");
     const keywords = formData.get("keywords");
-    const playlist = formData.get("playlist") || null;  // New playlist field
+    const playlist = formData.get("playlist") || null;
 
     if (!title || !description || !professorName || (!videoLink && !videoFile) || !keywords) {
       return new Response(
@@ -63,7 +58,6 @@ export async function POST(req) {
       videoLink = await uploadToCloudinary(videoFile);
     }
 
-    const db = await connectToDB();
     const result = await db.collection("videos").insertOne({
       title,
       description,
@@ -73,6 +67,8 @@ export async function POST(req) {
       playlist,
       createdAt: new Date(),
     });
+
+    await client.close();
 
     return new Response(
       JSON.stringify({ success: true, message: "Video uploaded successfully!", videoUrl: videoLink }),
