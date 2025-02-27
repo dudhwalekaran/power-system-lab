@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useState } from "react";
+import Link from 'next/link';
 
 export default function Page() {
   const [books, setBooks] = useState([]);
@@ -69,6 +70,11 @@ export default function Page() {
                   Lab resources
                 </a>
               </li>
+              <li>
+              <Link href="/upload-documents" className="hover:text-gray-300">
+                Documents
+              </Link>
+            </li>
             </ul>
           </div>
         </nav>

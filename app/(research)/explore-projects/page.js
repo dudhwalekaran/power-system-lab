@@ -2,10 +2,10 @@ import React from "react";
 
 const projects = [
   {
-    title: "Smart Grid Optimization",
+    title: "Dynamic Voltage Restorer",
     description:
       "This project focuses on improving the efficiency and stability of power grids using machine learning algorithms for load forecasting and dynamic grid reconfiguration.",
-    image: "/images/smart-grid.jpg",
+    image: "/images/grid.avif",
     details: [
       "Developed load forecasting models using machine learning.",
       "Designed dynamic grid reconfiguration techniques.",
@@ -13,10 +13,10 @@ const projects = [
     ],
   },
   {
-    title: "Solar-Powered Microgrid Design",
+    title: "High Speed rail coperation",
     description:
       "Design and implementation of a solar-powered microgrid system to supply electricity to remote areas using renewable energy sources.",
-    image: "/images/solar-microgrid.jpg",
+    image: "/images/energy.avif",
     details: [
       "Designed solar panels layout and battery storage systems.",
       "Implemented energy management system for optimal operation.",

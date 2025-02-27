@@ -16,15 +16,26 @@ export default function AlumniStudents() {
       image: "/alumni/user.gif", // Replace with actual image URL
     },
     {
-      name: "Dr. Kunal Salunkhe",
-      degree: "PhD in Electrical Engineeging",
-      graduationYear: "2016",
-      currentPosition: "Not available",
-      subject: "Not Available",
-      email: "Not Available",
+      name: "Vinay Chindu",
+      degree: "PhD in Electrical Engineering",
+      graduationYear: "2023",
+      currentPosition: "Not Available",
+      subject: "power system modelling specifically EMT modelling",
+      email: "vinaychindu@gmail.com",
       phone: "Not Available",
-      website: "https://www.linkedin.com/in/dr-kunal-salunkhe-7a511b119/",
-      image: "/alumni/kunal.jpeg", // Replace with actual image URL
+      website: "https://www.linkedin.com/in/vinay-chindu-7b43b253/",
+      image: "/alumni/vinay.jpg", // Replace with actual image URL
+    },
+    {
+      name: "Dr. Kevin Gujjar",
+      degree: "phD in Electrical Engineering",
+      graduationYear: "2023",
+      currentPosition: "R&D Senior Engineer at Hitachi Energy",
+      subject: "Stability Analysis and Design of Wide-Area Damping Controllers",
+      email: "not available",
+      phone: "not available",
+      website: "https://www.linkedin.com/in/kevin-gajjar-ph-d-a4317b74/",
+      image: "/alumni/kevin.jpeg", // Replace with actual image URL
     },
     {
       name: "Dr. Kaustav Dey",
@@ -38,17 +49,6 @@ export default function AlumniStudents() {
       image: "/alumni/kaustav.jpeg", // Replace with actual image URL
     },
     {
-      name: "Dr. Mukesh Das",
-      degree: "PhD in Electrical Engineering",
-      graduationYear: "2016",
-      currentPosition: "Power System Studies Specialist at Electranix Corporation",
-      subject: "not available",
-      email: "not available",
-      phone: "not available",
-      website: "linkedin.com/in/mukesh-kumar-das-41479b34",
-      image: "/alumni/mukesh.jpeg", // Replace with actual image URL
-    },
-    {
       name: "Dr. Rathin Dholakiya",
       degree: "phD in Electrical Engineering",
       graduationYear: "2017",
@@ -60,15 +60,26 @@ export default function AlumniStudents() {
       image: "/alumni/rathin.jpeg", // Replace with actual image URL
     },
     {
-      name: "Dr. Kevin Gujjar",
-      degree: "phD in Electrical Engineering",
-      graduationYear: "2023",
-      currentPosition: "R&D Senior Engineer at Hitachi Energy",
-      subject: "Stability Analysis and Design of Wide-Area Damping Controllers",
+      name: "Dr. Kunal Salunkhe",
+      degree: "PhD in Electrical Engineeging",
+      graduationYear: "2016",
+      currentPosition: "Not available",
+      subject: "Not Available",
+      email: "Not Available",
+      phone: "Not Available",
+      website: "https://www.linkedin.com/in/dr-kunal-salunkhe-7a511b119/",
+      image: "/alumni/kunal.jpeg", // Replace with actual image URL
+    },
+    {
+      name: "Dr. Mukesh Das",
+      degree: "PhD in Electrical Engineering",
+      graduationYear: "2016",
+      currentPosition: "Power System Studies Specialist at Electranix Corporation",
+      subject: "not available",
       email: "not available",
       phone: "not available",
-      website: "https://www.linkedin.com/in/kevin-gajjar-ph-d-a4317b74/",
-      image: "/alumni/kevin.jpeg", // Replace with actual image URL
+      website: "linkedin.com/in/mukesh-kumar-das-41479b34",
+      image: "/alumni/mukesh.jpeg", // Replace with actual image URL
     },
     {
       name: "Dr. Ashwin Damle",
@@ -112,7 +123,7 @@ export default function AlumniStudents() {
     <div className="bg-gray-50 text-gray-900 py-12">
       <div className="container mx-auto px-6">
         <h1 className="text-4xl font-semibold text-center text-gray-800 mb-12">
-          Alumni Students
+          Alumni 
         </h1>
         <p className="text-lg text-center mb-12 text-gray-600">
           Meet our distinguished alumni who have gone on to make significant contributions to the field of electrical engineering and power systems.

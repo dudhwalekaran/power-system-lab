@@ -5,24 +5,22 @@ import Image from 'next/image'
 
 const labMembers = [
   {
-    name: 'Harshala',
-    title: 'Professor of Electrical Engineering',
-    bio: 'Dr. John Doe leads the MIT Power Systems Lab. His research focuses on the integration of renewable energy into electrical grids. He has over 20 years of experience in power systems engineering and is committed to sustainable energy solutions.',
-    email: 'john.doe@mit.edu',
-    phone: '+1 (123) 456-7890',
-    image: '/images/john-doe.jpg', // Replace with actual path
-    linkedin: 'https://www.linkedin.com/in/john-doe',
-    researchgate: 'https://www.researchgate.net/profile/John-Doe',
+    name: 'K Navaneeth',
+    title: 'Research Project Assistant',
+    bio: 'Power and Energy Systems',
+    email: 'Not Available',
+    phone: 'Not Available',
+    image: '/staff/navaneeth.jpg', // Replace with actual path
+    linkedin: 'https://www.linkedin.com/in/k-navaneeth-a26993192/',
   },
   {
-    name: 'Navneet',
-    title: 'PhD Student',
-    bio: 'Dr. Jane Smith is researching advanced power electronics and grid stability, with a focus on AI-driven solutions. She is passionate about using machine learning techniques to optimize power system operations.',
-    email: 'jane.smith@mit.edu',
-    phone: '+1 (987) 654-3210',
-    image: '/images/jane-smith.jpg', // Replace with actual path
-    linkedin: 'https://www.linkedin.com/in/jane-smith',
-    researchgate: 'https://www.researchgate.net/profile/Jane-Smith',
+    name: 'Harshala Ranade',
+    title: 'Technical Support',
+    bio: '',
+    email: 'Not Available',
+    phone: 'Not Available',
+    image: '/staff/john-doe.jpg', // Replace with actual path
+    linkedin: 'Not available',
   },
   // Add more lab members here...
 ]
@@ -99,7 +97,6 @@ export default function LabMembersPage() {
               <p>Email: <a href={`mailto:${selectedMember.email}`} className="text-indigo-600 hover:text-indigo-800">{selectedMember.email}</a></p>
               <p>Phone: {selectedMember.phone}</p>
               <p>LinkedIn: <a href={selectedMember.linkedin} className="text-indigo-600 hover:text-indigo-800" target="_blank" rel="noopener noreferrer">{selectedMember.linkedin}</a></p>
-              <p>ResearchGate: <a href={selectedMember.researchgate} className="text-indigo-600 hover:text-indigo-800" target="_blank" rel="noopener noreferrer">{selectedMember.researchgate}</a></p>
             </div>
           </div>
         </div>

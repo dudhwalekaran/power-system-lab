@@ -146,6 +146,7 @@ export default function LoginRequest() {
               <select className="border border-[#3B82F6] text-sm font-normal rounded-md bg-[#Fff] px-4 py-2">
                 <option value="all">All</option>
                 <option value="pending">Pending</option>
+                <option value="accepted">Accepted</option>
                 <option value="rejected">Rejected</option>
               </select>
             </div>

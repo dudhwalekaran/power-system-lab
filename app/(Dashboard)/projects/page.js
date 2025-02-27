@@ -55,6 +55,7 @@ export default function Projects() {
             <li><a href="/all-task" className="hover:text-gray-300">Tasks</a></li>
             <li><a href="/resources" className="hover:text-gray-300">Upload video</a></li>
             <li><a href="/lab-resources" className="hover:text-gray-300">Lab resources</a></li>
+            <li><a href="/upload-documents" className="hover:text-gray-300">Documents</a></li>
           </ul>
         </div>
       </nav>

@@ -3,34 +3,6 @@
 export default function FreeSoftwares() {
   return (
     <div className="bg-gray-50 text-gray-900 py-12">
-      <p className="text-3xl font-semibold text-center text-gray-800 mb-12">
-        IITB Inhouse built software for power electronic simulation
-      </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="bg-white p-6 rounded-lg shadow-md text-center mb-24 ml-10">
-          <img
-            src="https://power-system-lab.vercel.app/software_logo/octave.png"
-            alt="Sequel Logo"
-            className="w-24 h-24 mx-auto mb-4"
-          />
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">
-            Sequel
-          </h3>
-          <p className="text-gray-600 mb-4">
-            A free, open-source software for numerical computations, useful for
-            matrix operations, data analysis, and simulations.
-          </p>
-          <a
-            href="https://www.gnu.org/software/octave/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 font-semibold"
-          >
-            Visit Website
-          </a>
-        </div>
-      </div>
-
       <div className="container mx-auto px-6">
         <h1 className="text-3xl font-semibold text-center text-gray-800 mb-12">
           Free Software for Research and Engineering
@@ -207,6 +179,194 @@ export default function FreeSoftwares() {
               Visit Website
             </a>
           </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <img
+              src="/logos/ltspice.jpg"
+              alt="LT Spice"
+              className="w-24 h-24 mx-auto mb-4"
+            />
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              LT Spice
+            </h3>
+            <p className="text-gray-600 mb-4">
+              LTspice is a powerful, free simulation software used for circuit
+              design and analysis. It allows engineers to model analog and
+              digital circuits with accurate simulations. Its user-friendly
+              interface and extensive library make it a popular tool for testing
+              and debugging electronic designs.
+            </p>
+            <a
+              href="https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              Visit Website
+            </a>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <img
+              src="/logos/qspice.jpg"
+              alt="QSpice"
+              className="w-24 h-24 mx-auto mb-4"
+            />
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">QSpice</h3>
+            <p className="text-gray-600 mb-4">
+              QSpice is an open-source, circuit simulation software used for
+              analog and mixed-signal circuit analysis. It provides tools for
+              accurate modeling and simulation of electronic circuits, offering
+              real-time feedback and waveform analysis. QSpice is widely used
+              for both educational and professional purposes due to its
+              flexibility and ease of use.
+            </p>
+            <a
+              href="https://www.qorvo.com/design-hub/design-tools/interactive/qspice"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              Visit Website
+            </a>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <img
+              src="/logos/overleaf.jpg"
+              alt="Overleaf"
+              className="w-24 h-24 mx-auto mb-4"
+            />
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              Overleaf
+            </h3>
+            <p className="text-gray-600 mb-4">
+              Overleaf is an online LaTeX editor that allows users to write,
+              edit, and collaborate on scientific documents in real-time. It
+              simplifies the LaTeX process with a rich text editor and instant
+              preview of the document. Overleaf is widely used in academia for
+              creating research papers, reports, and publications.
+            </p>
+            <a
+              href="https://www.overleaf.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              Visit Website
+            </a>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <img
+              src="/logos/matlab.jpg"
+              alt="Matlab"
+              className="w-24 h-24 mx-auto mb-4"
+            />
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">Matlab</h3>
+            <p className="text-gray-600 mb-4">
+              MATLAB combines a desktop environment tuned for iterative analysis
+              and design processes with a programming language that expresses
+              matrix and array mathematics directly. It includes the Live Editor
+              for creating scripts that combine code, output, and formatted text
+              in an executable notebook.
+            </p>
+            <a
+              href="https://www.overleaf.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              Visit Website
+            </a>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md text-center">
+            <img
+              src="/logos/pscad.jpg"
+              alt="PSCAD"
+              className="w-24 h-24 mx-auto mb-4"
+            />
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">PSCAD</h3>
+            <p className="text-gray-600 mb-4">
+              MATLAB combines a desktop environment tuned for iterative analysis
+              and design processes with a programming language that expresses
+              matrix and array mathematics directly. It includes the Live Editor
+              for creating scripts that combine code, output, and formatted text
+              in an executable notebook.
+            </p>
+            <a
+              href="https://www.overleaf.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              Visit Website
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p className="text-3xl font-semibold text-center text-gray-800 mb-12 mt-24">
+        IITB Inhouse built software for power electronic simulation
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="bg-white p-6 rounded-lg shadow-md text-center mb-24 ml-10">
+          <img
+            src="null"
+            alt="Sequel Logo"
+            className="w-24 h-24 mx-auto mb-4"
+          />
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">Sequel</h3>
+          <p className="text-gray-600 mb-4">
+            SEQUEL is a general-purpose circuit simulation package developed at
+            IIT Bombay. It provides a GUI for schematic entry and plotting.
+            Several simulation examples in electronics and power electronics,
+            particularly suitable for teaching engineering courses, are included
+            in the package.
+          </p>
+          <a
+            href="https://www.ee.iitb.ac.in/~microel/faculty/mbp/sequel1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 font-semibold"
+          >
+            Visit Website
+          </a>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md text-center mb-24 ml-10">
+          <img
+            src="null"
+            alt="pmu simulator Logo"
+            className="w-24 h-24 mx-auto mb-4"
+          />
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">
+            PMU Simulator
+          </h3>
+          <p className="text-gray-600 mb-4"></p>
+          <a
+            href="https://www.ee.iitb.ac.in/~microel/faculty/mbp/sequel1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 font-semibold"
+          >
+            Visit Website
+          </a>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md text-center mb-24 ml-10">
+          <img src="null" alt="ipdc Logo" className="w-24 h-24 mx-auto mb-4" />
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">IPDC</h3>
+          <p className="text-gray-600 mb-4"></p>
+          <a
+            href="https://www.ee.iitb.ac.in/~microel/faculty/mbp/sequel1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 font-semibold"
+          >
+            Visit Website
+          </a>
         </div>
       </div>
     </div>

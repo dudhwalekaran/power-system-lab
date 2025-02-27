@@ -14,7 +14,7 @@ export default function Faculty() {
       email: "mbpatil@ee.iitb.ac.in",
       phone: "+91-22-2576-7446",
       website: "https://www.ee.iitb.ac.in/wiki/faculty/mbpatil",
-      image: "/faculty/mahesh.png" // Replace with actual image URL
+      image: "/faculty/mahesh.png"
     },
     {
       name: "Prof. Mukul Chandorkar",
@@ -25,7 +25,7 @@ export default function Faculty() {
       email: "mukul@ee.iitb.ac.in",
       phone: "+91-22-2576-7475",
       website: "https://www.ee.iitb.ac.in/~mukul/",
-      image: "/faculty/mukul.png" // Replace with actual image URL
+      image: "/faculty/mukul.png"
     },
     {
       name: "Prof. Anil Kulkarni",
@@ -39,7 +39,7 @@ export default function Faculty() {
       email: "anil@ee.iitb.ac.in",
       phone: "+91-22-2576-7416",
       website: "https://www.ee.iitb.ac.in/wiki/faculty/anil",
-      image: "/faculty/anil.png" // Replace with actual image URL
+      image: "/faculty/anil.png"
     },
     {
       name: "Prof. Himanshu Bahirat",
@@ -53,7 +53,7 @@ export default function Faculty() {
       email: "hjbahirat@ee.iitb.ac.in",
       phone: "+91-22-2576-9415",
       website: "https://www.ee.iitb.ac.in/wiki/faculty/hjbahirat",
-      image: "/faculty/himanshu.png" // Replace with actual image URL
+      image: "/faculty/himanshu.png"
     },
   ];
 
@@ -66,9 +66,9 @@ export default function Faculty() {
         </p>
 
         {/* Faculty Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {facultyMembers.map((faculty, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md text-left transform transition duration-500 hover:scale-105 hover:shadow-xl">
+            <div key={index} className="bg-white p-6 rounded-lg shadow-md text-left transform transition duration-500 hover:scale-105 hover:shadow-xl max-w-xl">
               <div className="flex items-center mb-4">
                 <img
                   src={faculty.image}

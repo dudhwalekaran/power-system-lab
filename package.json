@@ -34,7 +34,8 @@
     "react-icons": "^5.4.0",
     "run": "^1.5.0",
     "sass": "^1.84.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "wordcloud": "^1.2.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

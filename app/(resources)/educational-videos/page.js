@@ -44,7 +44,16 @@ export default function VideosPage() {
 
       const matchesSubject =
         selectedSubject === "All" ||
-        (selectedSubject === "Playlists" && video.playlist); // Playlist filtering logic
+        (selectedSubject === "Playlists" && video.playlist) ||
+        (selectedSubject === "Softwares" &&
+          video.keywords &&
+          video.keywords.toLowerCase().includes("softwares")) ||
+        (selectedSubject === "Experiments" &&
+          video.keywords &&
+          video.keywords.toLowerCase().includes("experiments")) ||
+        (selectedSubject === "Tutorials" &&
+          video.keywords &&
+          video.keywords.toLowerCase().includes("tutorials"));
 
       return matchesSearchTerm && matchesSubject;
     });
@@ -90,7 +99,13 @@ export default function VideosPage() {
   };
 
   // Subject Categories (you can customize this list as needed)
-  const subjects = ["All", "Playlists"];
+  const subjects = [
+    "All",
+    "Playlists",
+    "Softwares",
+    "Tutorials",
+    "Experiments",
+  ];
 
   return (
     <div className="min-h-screen bg-gray-100 font-sans antialiased">
@@ -109,14 +124,14 @@ export default function VideosPage() {
 
       {/* Search Bar */}
       <div className="flex justify-center my-8">
-      <input
-        type="text"
-        id="search"
-        placeholder="Search videos or playlists"
-        className="border border-gray-300 rounded-lg px-6 py-3 w-full max-w-xl shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}  // Update search term on input change
-      />
+        <input
+          type="text"
+          id="search"
+          placeholder="Search videos or playlists"
+          className="border border-gray-300 rounded-lg px-6 py-3 w-full max-w-xl shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)} // Update search term on input change
+        />
       </div>
 
       {/* Subject Categories */}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from 'next/link';
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);
@@ -93,6 +94,11 @@ export default function Projects() {
               <a href="/lab-resources" className="hover:text-gray-300">
                 Lab resources
               </a>
+            </li>
+            <li>
+              <Link href="/upload-documents" className="hover:text-gray-300">
+                Documents
+              </Link>
             </li>
           </ul>
         </div>

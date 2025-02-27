@@ -26,14 +26,9 @@ const Header = ({ toggleSidebar }) => {
               href="/subject"
               className="block text-white py-2 px-4 hover:bg-gray-700"
             >
-              Subject
+              Subject & Areas
             </Link>
-            <Link
-              href="/areas"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
-            >
-              Areas
-            </Link>
+
           </div>
         </div>
 
@@ -42,9 +37,15 @@ const Header = ({ toggleSidebar }) => {
             href="/"
             className="hover:text-indigo-400 transition-colors"
           >
-            Research
+            Research & Projects
           </Link>
           <div className="absolute left-0 mt-2 bg-gray-800 w-48 opacity-0 text-lg group-hover:opacity-100 transform group-hover:translate-x-0 transition-all ease-in-out duration-300 shadow-md invisible group-hover:visible">
+          <Link
+              href="/research"
+              className="block text-white py-2 px-4 hover:bg-gray-700"
+            >
+              Research
+            </Link>
             <Link
               href="/current-research"
               className="block text-white py-2 px-4 hover:bg-gray-700"
@@ -75,6 +76,12 @@ const Header = ({ toggleSidebar }) => {
               Library
             </Link>
             <Link
+              href="/softwares"
+              className="block text-white py-2 px-4 hover:bg-gray-700"
+            >
+              Softwares
+            </Link>
+            <Link
               href="educational-videos"
               className="block text-white py-2 px-4 hover:bg-gray-700"
             >
@@ -86,12 +93,6 @@ const Header = ({ toggleSidebar }) => {
               target="_blank"
             >
               Educational Content
-            </Link>
-            <Link
-              href="/softwares"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
-            >
-              Softwares
             </Link>
           </div>
         </div>
@@ -122,16 +123,23 @@ const Header = ({ toggleSidebar }) => {
             >
               Alumni
             </Link>
+            <Link
+              href="/staff"
+              className="block text-white py-2 px-4 hover:bg-gray-700"
+            >
+              Staff
+            </Link>
           </div>
         </div>
       </nav>
 
       <div className="flex items-center">
+        <Link href="https://www.iitb.ac.in/">
         <img
           src="/images/iitb.png"
-          alt="IIT Power Systems Lab Logo"
+          alt="IITB Power Systems Lab Logo"
           className="w-16 h-16"
-        />
+        /></Link>
       </div>
     </header>
   );
@@ -171,13 +179,6 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => (
         >
           Login
         </Link>
-        <Link
-          href="/lab-members"
-          onClick={toggleSidebar}
-          className="text-white text-lg hover:text-indigo-400 transition-colors"
-        >
-          Lab Members
-        </Link>
       </div>
     </div>
   </div>
@@ -190,7 +191,7 @@ const Footer = () => (
     <div className="container mx-auto text-center">
       <div className="space-x-6 mb-4">
         <a
-          href="https://www.youtube.com/@pslab_iitb"
+          href="https://www.youtube.com/@pslab_IITBb"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-indigo-400"
@@ -207,7 +208,7 @@ const Footer = () => (
         </a>
       </div>
       <p className="text-sm">
-        &copy; 2025 IIT Power Systems Lab. All rights reserved.
+        &copy; 2025 IITB Power Systems Lab. All rights reserved.
       </p>
     </div>
   </footer>
@@ -235,9 +236,8 @@ export default function Layout({ children }) {
     "/meeting",
     "/upmath",
     "/nextcloud",
-    "/educational-videos",
     "/excalidraw",
-    "/tawk",
+    "/upload-documents",
     "/overleaf",
 
   ].includes(pathname);
@@ -256,7 +256,7 @@ export default function Layout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>IIT Power Systems Lab</title>
+        <title>IITB Power Systems Lab</title>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"

@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function CurrentStudents() {
   const students = [
@@ -70,11 +70,13 @@ export default function CurrentStudents() {
   return (
     <div className="bg-gray-50 text-gray-900 py-12">
       <div className="container mx-auto px-6">
-        <h1 className="text-4xl font-semibold text-center text-gray-800 mb-12">
-          Current Students
+        <h1 className="text-4xl font-semibold text-center text-gray-900 mb-8">
+          Meet Our Lab Students
         </h1>
         <p className="text-lg text-center mb-12 text-gray-600">
-          Meet the current students working on groundbreaking research projects in the Power Systems Lab.
+          Discover the talented students driving innovative research and
+          development in the Power Systems Lab, shaping the future of power
+          systems and energy solutions.
         </p>
 
         {/* Students Section */}
@@ -91,7 +93,9 @@ export default function CurrentStudents() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{student.name}</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">
+                {student.name}
+              </h3>
               <p className="text-gray-600 mb-4 text-center">{student.degree}</p>
               <p className="text-gray-600 mb-4 font-semibold">Project:</p>
               <p className="text-gray-500 mb-4">{student.project}</p>
@@ -119,8 +123,24 @@ export default function CurrentStudents() {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Contact {selectedStudent.name}
               </h2>
-              <p className="text-gray-600 mb-4">Email: <a href={`mailto:${selectedStudent.email}`} className="text-blue-600">{selectedStudent.email}</a></p>
-              <p className="text-gray-600">Phone: <a href={`tel:${selectedStudent.phone}`} className="text-blue-600">{selectedStudent.phone}</a></p>
+              <p className="text-gray-600 mb-4">
+                Email:{" "}
+                <a
+                  href={`mailto:${selectedStudent.email}`}
+                  className="text-blue-600"
+                >
+                  {selectedStudent.email}
+                </a>
+              </p>
+              <p className="text-gray-600">
+                Phone:{" "}
+                <a
+                  href={`tel:${selectedStudent.phone}`}
+                  className="text-blue-600"
+                >
+                  {selectedStudent.phone}
+                </a>
+              </p>
             </div>
           </div>
         )}
