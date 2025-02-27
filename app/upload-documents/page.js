@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { FiFileText, FiFilePdf, FiFile } from "react-icons/fi";  // Importing icons for file types
+import { BsFileText, BsFilePdf, BsFile } from "react-icons/bs";  // Importing updated icons for file types
 
 const DocumentList = () => {
   const [files, setFiles] = useState([]);
@@ -54,11 +54,11 @@ const DocumentList = () => {
   // Function to detect file type and return an icon
   const getFileIcon = (fileLink) => {
     if (fileLink.includes('.pdf')) {
-      return <FiFilePdf className="text-red-500 text-3xl" />;
+      return <BsFilePdf className="text-red-500 text-3xl" />;  // Updated to BsFilePdf for PDF files
     } else if (fileLink.includes('.docx') || fileLink.includes('.doc')) {
-      return <FiFileText className="text-blue-500 text-3xl" />;
+      return <BsFileText className="text-blue-500 text-3xl" />;  // Updated to BsFileText for text files
     } else {
-      return <FiFile className="text-gray-500 text-3xl" />;
+      return <BsFile className="text-gray-500 text-3xl" />;  // Updated to BsFile for general files
     }
   };
 
@@ -75,7 +75,7 @@ const DocumentList = () => {
                 className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 transform hover:scale-105 p-6"
               >
                 <div className="flex justify-center mb-4">
-                  {getFileIcon(file.link)}
+                  {getFileIcon(file.link)}  {/* Display the appropriate icon */}
                 </div>
                 <h2 className="text-xl font-semibold text-center mb-4">{file.name}</h2>
 
