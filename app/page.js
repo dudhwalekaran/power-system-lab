@@ -201,9 +201,9 @@ export default function Home() {
             {/* Image Section */}
             <div className="w-full md:w-1/2">
               <img
-                src="/images/grid.avif" // replace with your image URL
+                src="/images/about.jpg" // replace with your image URL
                 alt="Power Systems Lab"
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-[80%] h-auto rounded-lg shadow-lg ml-10"
               />
             </div>
           </div>

@@ -12,7 +12,7 @@ export default function VideosPage() {
   // Fetch videos from the API endpoint
   const fetchVideos = async () => {
     try {
-      const response = await fetch("/api/videos"); // Adjust endpoint if needed
+      const response = await fetch("api/videos"); // Adjust endpoint if needed
       if (!response.ok) {
         throw new Error("Network response was not ok: " + response.statusText);
       }
