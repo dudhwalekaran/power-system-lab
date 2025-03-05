@@ -103,7 +103,7 @@ export default function Page() {
               className="flex items-center p-6 space-x-4 hover:bg-blue-50 transition-all duration-300"
             >
               <img
-                src="https://power-system-lab.vercel.app/public/pdf.png"
+                src="/images/pdf.png"
                 alt="PDF Icon"
                 className="h-16 w-16 rounded-lg"
               />
@@ -126,7 +126,7 @@ export default function Page() {
               className="flex items-center p-6 space-x-4 hover:bg-blue-50 transition-all duration-300"
             >
               <img
-                src="https://power-system-lab.vercel.app/public/excel.png"
+                src="images/excel.png"
                 alt="Excel Icon"
                 className="h-16 w-16 rounded-lg"
               />
@@ -150,7 +150,7 @@ export default function Page() {
               className="flex items-center p-6 space-x-4 hover:bg-blue-50 transition-all duration-300"
             >
               <img
-                src="https://power-system-lab.vercel.app/public/excel.png"
+                src="images/excel.png"
                 alt="Excel Icon"
                 className="h-16 w-16 rounded-lg"
               />
@@ -178,7 +178,7 @@ export default function Page() {
             {/* QR Book Card */}
             <div className="flex flex-col items-center bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-xl p-6">
               <img
-                src="https://power-system-lab.vercel.app/qrcode.png"
+                src="images/bookqr.png"
                 alt="QR Code for Book"
                 className="w-40 h-40 mb-4 transition-all duration-300 transform hover:scale-110"
               />
@@ -187,7 +187,7 @@ export default function Page() {
             {/* QR Machine Card */}
             <div className="flex flex-col items-center bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-xl p-6">
               <img
-                src="https://power-system-lab.vercel.app/machineformqr.png"
+                src="images/machineqr.png"
                 alt="QR Code for Machine"
                 className="w-40 h-40 mb-4 transition-all duration-300 transform hover:scale-110"
               />

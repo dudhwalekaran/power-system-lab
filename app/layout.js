@@ -8,39 +8,24 @@ import "./globals.css"; // Import global styles if you have them
 // Header Component with Logo, Centered Nav, and Hamburger
 const Header = ({ toggleSidebar }) => {
   return (
-    <header className="bg-gray-900 text-white p-6 flex justify-between items-center">
-      <button onClick={toggleSidebar} className="text-2xl">
-        <i className="fas fa-bars"></i> {/* Hamburger Icon (Font Awesome) */}
-      </button>
+    <header className="bg-gray-900 text-white p-4 flex justify-between items-center">
+      {/*<button onClick={toggleSidebar} className="text-2xl">
+        <i className="fas fa-bars"></i> {/* Hamburger Icon (Font Awesome) 
+      </button>*/}
 
-      <nav className="flex-grow flex justify-center text-2xl font-serif space-x-14">
-        <Link href="/" className="hover:text-indigo-400 transition-colors">
-          Home
-        </Link>
+      <nav className="flex-grow flex justify-center text-xl font-serif space-x-6 overflow-visible">
         <div className="relative group">
           <Link href="/" className="hover:text-indigo-400 transition-colors">
-            Academics
+            Academics/Research
           </Link>
-          <div className="absolute left-0 mt-2 bg-gray-800 w-48 opacity-0 text-lg group-hover:opacity-100 transform group-hover:translate-x-0 transition-all ease-in-out duration-300 shadow-md invisible group-hover:visible">
+            <div className="absolute left-0 mt-2 bg-gray-800 w-48 opacity-0 text-lg group-hover:opacity-100 max-h-0 group-hover:max-h-44 overflow-hidden transform transition-all ease-in-out duration-300 shadow-md group-hover:visible z-50">
             <Link
               href="/subject"
               className="block text-white py-2 px-4 hover:bg-gray-700"
             >
               Subject & Areas
             </Link>
-
-          </div>
-        </div>
-
-        <div className="relative group">
-          <Link
-            href="/"
-            className="hover:text-indigo-400 transition-colors"
-          >
-            Research & Projects
-          </Link>
-          <div className="absolute left-0 mt-2 bg-gray-800 w-48 opacity-0 text-lg group-hover:opacity-100 transform group-hover:translate-x-0 transition-all ease-in-out duration-300 shadow-md invisible group-hover:visible">
-          <Link
+            <Link
               href="/research"
               className="block text-white py-2 px-4 hover:bg-gray-700"
             >
@@ -62,13 +47,16 @@ const Header = ({ toggleSidebar }) => {
         </div>
 
         <div className="relative group">
-          <Link
-            href=""
-            className="hover:text-indigo-400 transition-colors"
-          >
+          <Link href="/" className="hover:text-indigo-400 transition-colors">
+            Laboratory Facilities
+          </Link>
+        </div>
+
+        <div className="relative group">
+          <Link href="" className="hover:text-indigo-400 transition-colors">
             Resources
           </Link>
-          <div className="absolute left-0 mt-2 bg-gray-800 w-48 opacity-0 text-lg group-hover:opacity-100 transform group-hover:translate-x-0 transition-all ease-in-out duration-300 shadow-md invisible group-hover:visible">
+          <div className="absolute left-0 mt-2 bg-gray-800 w-48 opacity-0 text-lg group-hover:opacity-100 max-h-0 group-hover:max-h-52 overflow-hidden transform transition-all ease-in-out duration-300 shadow-md group-hover:visible z-50">
             <Link
               href="/library"
               className="block text-white py-2 px-4 hover:bg-gray-700"
@@ -82,7 +70,7 @@ const Header = ({ toggleSidebar }) => {
               Softwares
             </Link>
             <Link
-              href="/educational-videos"
+              href="/youtube-videos"
               className="block text-white py-2 px-4 hover:bg-gray-700"
             >
               Educational Videos
@@ -98,13 +86,10 @@ const Header = ({ toggleSidebar }) => {
         </div>
 
         <div className="relative group">
-          <Link
-            href=""
-            className="hover:text-indigo-400 transition-colors"
-          >
+          <Link href="" className="hover:text-indigo-400 transition-colors">
             People
           </Link>
-          <div className="absolute left-0 mt-2 bg-gray-800 w-48 opacity-0 text-lg group-hover:opacity-100 transform group-hover:translate-x-0 transition-all ease-in-out duration-300 shadow-md invisible group-hover:visible">
+          <div className="absolute left-0 mt-2 bg-gray-800 w-48 opacity-0 text-lg group-hover:opacity-100 max-h-0 group-hover:max-h-52 overflow-hidden transform transition-all ease-in-out duration-300 shadow-md group-hover:visible z-50">
             <Link
               href="/faculty"
               className="block text-white py-2 px-4 hover:bg-gray-700"
@@ -131,21 +116,29 @@ const Header = ({ toggleSidebar }) => {
             </Link>
           </div>
         </div>
+
+        <Link href="news" className="hover:text-indigo-400 transition-colors">
+          News
+        </Link>
+        <Link href="login" className="hover:text-indigo-400 transition-colors">
+          Login
+        </Link>
       </nav>
 
       <div className="flex items-center">
         <Link href="https://www.iitb.ac.in/">
-        <img
-          src="/images/iitb.png"
-          alt="IITB Power Systems Lab Logo"
-          className="w-16 h-16"
-        /></Link>
+          <img
+            src="/images/iitb.png"
+            alt="IITB Power Systems Lab Logo"
+            className="w-16 h-16"
+          />
+        </Link>
       </div>
     </header>
   );
 };
 
-// Sidebar Component with Main Items (no nested)
+//Sidebar Component with Main Items (no nested)
 const Sidebar = ({ isSidebarOpen, toggleSidebar }) => (
   <div
     className={`fixed inset-0 z-40 bg-gray-800 bg-opacity-75 transition-opacity duration-300 ${
@@ -182,8 +175,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => (
       </div>
     </div>
   </div>
-);
-
+); 
 
 // Footer Component with Social Links
 const Footer = () => (
@@ -191,7 +183,7 @@ const Footer = () => (
     <div className="container mx-auto text-center">
       <div className="space-x-6 mb-4">
         <a
-          href="https://www.youtube.com/@pslab_IITBb"
+          href="https://www.youtube.com/@pslab_iitb"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-indigo-400"
@@ -234,7 +226,6 @@ export default function Layout({ children }) {
     "/excalidraw",
     "/upload-documents",
     "/overleaf",
-
   ].includes(pathname);
 
   const closeSidebar = () => setSidebarOpen(false);
@@ -260,9 +251,12 @@ export default function Layout({ children }) {
       </head>
       <body className="font-sans bg-gray-100 text-gray-900">
         <div className="flex min-h-screen flex-col">
-          <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+          <Sidebar
+            isSidebarOpen={isSidebarOpen}
+            toggleSidebar={toggleSidebar}
+          />
           <div>
-            {!hideLayout && <Header toggleSidebar={toggleSidebar}/>}
+            {!hideLayout && <Header toggleSidebar={toggleSidebar} />}
             <main>{children}</main>
             {!hideLayout && <Footer />}
           </div>

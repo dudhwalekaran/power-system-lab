@@ -9,7 +9,6 @@ const labMembers = [
     title: 'Research Project Assistant',
     bio: 'Power and Energy Systems',
     email: 'Not Available',
-    phone: 'Not Available',
     image: '/staff/navaneeth.jpg', // Replace with actual path
     linkedin: 'https://www.linkedin.com/in/k-navaneeth-a26993192/',
   },
@@ -18,7 +17,6 @@ const labMembers = [
     title: 'Technical Support',
     bio: '',
     email: 'Not Available',
-    phone: 'Not Available',
     image: '/staff/john-doe.jpg', // Replace with actual path
     linkedin: 'Not available',
   },
@@ -65,7 +63,6 @@ export default function LabMembersPage() {
                 {/* Contact Information */}
                 <div className="mt-6 space-y-2 text-gray-700">
                   <p>Email: <a href={`mailto:${member.email}`} className="text-indigo-600 hover:text-indigo-800">{member.email}</a></p>
-                  <p>Phone: {member.phone}</p>
                 </div>
                 {/* More Info Button */}
                 <button 
@@ -95,7 +92,6 @@ export default function LabMembersPage() {
             <p className="text-sm text-gray-500 mb-4">{selectedMember.bio}</p>
             <div className="mt-4 space-y-2 text-gray-700">
               <p>Email: <a href={`mailto:${selectedMember.email}`} className="text-indigo-600 hover:text-indigo-800">{selectedMember.email}</a></p>
-              <p>Phone: {selectedMember.phone}</p>
               <p>LinkedIn: <a href={selectedMember.linkedin} className="text-indigo-600 hover:text-indigo-800" target="_blank" rel="noopener noreferrer">{selectedMember.linkedin}</a></p>
             </div>
           </div>

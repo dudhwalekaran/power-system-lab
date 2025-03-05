@@ -11,7 +11,6 @@ export default function AlumniStudents() {
       currentPosition: "Not Available",
       subject: "Not Available",
       email: "Not Available",
-      phone: "Not Available",
       website: "https://www.linkedin.com/in/santosh-singh-42915473/",
       image: "/alumni/user.gif", // Replace with actual image URL
     },
@@ -22,7 +21,6 @@ export default function AlumniStudents() {
       currentPosition: "Not Available",
       subject: "power system modelling specifically EMT modelling",
       email: "vinaychindu@gmail.com",
-      phone: "Not Available",
       website: "https://www.linkedin.com/in/vinay-chindu-7b43b253/",
       image: "/alumni/vinay.jpg", // Replace with actual image URL
     },
@@ -33,7 +31,6 @@ export default function AlumniStudents() {
       currentPosition: "R&D Senior Engineer at Hitachi Energy",
       subject: "Stability Analysis and Design of Wide-Area Damping Controllers",
       email: "not available",
-      phone: "not available",
       website: "https://www.linkedin.com/in/kevin-gajjar-ph-d-a4317b74/",
       image: "/alumni/kevin.jpeg", // Replace with actual image URL
     },
@@ -44,7 +41,6 @@ export default function AlumniStudents() {
       currentPosition: "",
       subject: "Not Available",
       email: "Not Available",
-      phone: "Not Available",
       website: "not available",
       image: "/alumni/kaustav.jpeg", // Replace with actual image URL
     },
@@ -55,7 +51,6 @@ export default function AlumniStudents() {
       currentPosition: "Team Lead, Energy Market Analyst at Energy Exemplar",
       subject: "Power System modelling & analysis",
       email: "not available",
-      phone: "not available",
       website: "https://www.jessicawhite.com",
       image: "/alumni/rathin.jpeg", // Replace with actual image URL
     },
@@ -66,7 +61,6 @@ export default function AlumniStudents() {
       currentPosition: "Not available",
       subject: "Not Available",
       email: "Not Available",
-      phone: "Not Available",
       website: "https://www.linkedin.com/in/dr-kunal-salunkhe-7a511b119/",
       image: "/alumni/kunal.jpeg", // Replace with actual image URL
     },
@@ -77,7 +71,6 @@ export default function AlumniStudents() {
       currentPosition: "Power System Studies Specialist at Electranix Corporation",
       subject: "not available",
       email: "not available",
-      phone: "not available",
       website: "linkedin.com/in/mukesh-kumar-das-41479b34",
       image: "/alumni/mukesh.jpeg", // Replace with actual image URL
     },
@@ -88,7 +81,6 @@ export default function AlumniStudents() {
       currentPosition: "Director at Nayak Power Systems Pvt. Ltd.",
       subject: "Not available",
       email: "not available",
-      phone: "not available",
       website: "https://www.linkedin.com/in/ashwin-damle-03452a215/",
       image: "/alumni/ashwin.jpeg", // Replace with actual image URL
     },
@@ -99,7 +91,6 @@ export default function AlumniStudents() {
       currentPosition: "Not Available",
       subject: "Smart Grid loT",
       email: "not available",
-      phone: "not available",
       website: "https://www.linkedin.com/in/ashwin-damle-03452a215/",
       image: "/alumni/user.gif", // Replace with actual image URL
     }
@@ -174,7 +165,6 @@ export default function AlumniStudents() {
                 Contact {selectedAlumnus.name}
               </h2>
               <p className="text-gray-600 mb-4">Email: <a href={`mailto:${selectedAlumnus.email}`} className="text-blue-600">{selectedAlumnus.email}</a></p>
-              <p className="text-gray-600 mb-4">Phone: <a href={`tel:${selectedAlumnus.phone}`} className="text-blue-600">{selectedAlumnus.phone}</a></p>
               <p className="text-gray-600 mb-4">Website: <a href={selectedAlumnus.website} target="_blank" rel="noopener noreferrer" className="text-blue-600">{selectedAlumnus.website}</a></p>
             </div>
           </div>

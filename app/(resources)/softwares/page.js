@@ -3,6 +3,68 @@
 export default function FreeSoftwares() {
   return (
     <div className="bg-gray-50 text-gray-900 py-12">
+      <p className="text-3xl font-semibold text-center text-gray-800 mb-12 mt-10">
+        IITB Inhouse built software
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="bg-white p-6 rounded-lg shadow-md text-center mb-24 ml-10">
+          <img
+            src="null"
+            alt="Sequel Logo"
+            className="w-24 h-24 mx-auto mb-4"
+          />
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">Sequel</h3>
+          <p className="text-gray-600 mb-4">
+            SEQUEL is a general-purpose circuit simulation package developed at
+            IIT Bombay. It provides a GUI for schematic entry and plotting.
+            Several simulation examples in electronics and power electronics,
+            particularly suitable for teaching engineering courses, are included
+            in the package.
+          </p>
+          <a
+            href="https://www.ee.iitb.ac.in/~microel/faculty/mbp/sequel1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 font-semibold"
+          >
+            Visit Website
+          </a>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md text-center mb-24 ml-10">
+          <img
+            src="null"
+            alt="pmu simulator Logo"
+            className="w-24 h-24 mx-auto mb-4"
+          />
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">
+            PMU Simulator
+          </h3>
+          <p className="text-gray-600 mb-4"></p>
+          <a
+            href="https://www.ee.iitb.ac.in/~microel/faculty/mbp/sequel1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 font-semibold"
+          >
+            Visit Website
+          </a>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow-md text-center mb-24 ml-10">
+          <img src="null" alt="ipdc Logo" className="w-24 h-24 mx-auto mb-4" />
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">IPDC</h3>
+          <p className="text-gray-600 mb-4"></p>
+          <a
+            href="https://www.ee.iitb.ac.in/~microel/faculty/mbp/sequel1.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:text-blue-800 font-semibold"
+          >
+            Visit Website
+          </a>
+        </div>
+      </div>
       <div className="container mx-auto px-6">
         <h1 className="text-3xl font-semibold text-center text-gray-800 mb-12">
           Free Software for Research and Engineering
@@ -17,7 +79,7 @@ export default function FreeSoftwares() {
           {/* Octave */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <img
-              src="https://power-system-lab.vercel.app/software_logo/octave.png"
+              src="/logos/octave.jpg"
               alt="Octave Logo"
               className="w-24 h-24 mx-auto mb-4"
             />
@@ -41,7 +103,7 @@ export default function FreeSoftwares() {
           {/* Scilab */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <img
-              src="https://power-system-lab.vercel.app/software_logo/scilab.png"
+              src="/logos/scilab.png"
               alt="Scilab Logo"
               className="w-24 h-24 mx-auto mb-4"
             />
@@ -64,7 +126,7 @@ export default function FreeSoftwares() {
           {/* ATPDraw */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <img
-              src="https://power-system-lab.vercel.app/software_logo/atpdraw.png"
+              src="/logos/atp.png"
               alt="ATPDraw Logo"
               className="w-24 h-24 mx-auto mb-4"
             />
@@ -133,7 +195,7 @@ export default function FreeSoftwares() {
           {/* Xournal */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <img
-              src="https://power-system-lab.vercel.app/software_logo/xournal.png"
+              src="/logos/xournal.png"
               alt="Xournal Logo"
               className="w-24 h-24 mx-auto mb-4"
             />
@@ -157,7 +219,7 @@ export default function FreeSoftwares() {
 
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <img
-              src="https://power-system-lab.vercel.app/software_logo/libre.png"
+              src="/logos/libre.png"
               alt="Libre Office"
               className="w-24 h-24 mx-auto mb-4"
             />
@@ -289,11 +351,11 @@ export default function FreeSoftwares() {
             />
             <h3 className="text-xl font-semibold text-gray-800 mb-2">PSCAD</h3>
             <p className="text-gray-600 mb-4">
-              MATLAB combines a desktop environment tuned for iterative analysis
-              and design processes with a programming language that expresses
-              matrix and array mathematics directly. It includes the Live Editor
-              for creating scripts that combine code, output, and formatted text
-              in an executable notebook.
+              PSCAD (Power Systems Computer Aided Design) is a software tool
+              used for simulating and analyzing electrical power systems. It
+              enables engineers to model, test, and optimize complex power
+              networks, including transient and dynamic behaviors, for various
+              applications like protection, control, and power quality studies.
             </p>
             <a
               href="https://www.overleaf.com/"
@@ -304,69 +366,6 @@ export default function FreeSoftwares() {
               Visit Website
             </a>
           </div>
-        </div>
-      </div>
-
-      <p className="text-3xl font-semibold text-center text-gray-800 mb-12 mt-24">
-        IITB Inhouse built software for power electronic simulation
-      </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="bg-white p-6 rounded-lg shadow-md text-center mb-24 ml-10">
-          <img
-            src="null"
-            alt="Sequel Logo"
-            className="w-24 h-24 mx-auto mb-4"
-          />
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">Sequel</h3>
-          <p className="text-gray-600 mb-4">
-            SEQUEL is a general-purpose circuit simulation package developed at
-            IIT Bombay. It provides a GUI for schematic entry and plotting.
-            Several simulation examples in electronics and power electronics,
-            particularly suitable for teaching engineering courses, are included
-            in the package.
-          </p>
-          <a
-            href="https://www.ee.iitb.ac.in/~microel/faculty/mbp/sequel1.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 font-semibold"
-          >
-            Visit Website
-          </a>
-        </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-md text-center mb-24 ml-10">
-          <img
-            src="null"
-            alt="pmu simulator Logo"
-            className="w-24 h-24 mx-auto mb-4"
-          />
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">
-            PMU Simulator
-          </h3>
-          <p className="text-gray-600 mb-4"></p>
-          <a
-            href="https://www.ee.iitb.ac.in/~microel/faculty/mbp/sequel1.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 font-semibold"
-          >
-            Visit Website
-          </a>
-        </div>
-
-        <div className="bg-white p-6 rounded-lg shadow-md text-center mb-24 ml-10">
-          <img src="null" alt="ipdc Logo" className="w-24 h-24 mx-auto mb-4" />
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">IPDC</h3>
-          <p className="text-gray-600 mb-4"></p>
-          <a
-            href="https://www.ee.iitb.ac.in/~microel/faculty/mbp/sequel1.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 font-semibold"
-          >
-            Visit Website
-          </a>
         </div>
       </div>
     </div>

@@ -1,23 +1,24 @@
 import React from 'react';
 
 const researchTopics = [
+ 
   {
     id: 1,
-    title: 'Passivity based decentralized small signal stability criteria for power systems',
-    description: 'A detailed exploration of quantum computing advancements.',
-    link: 'https://shodhganga.inflibnet.ac.in/handle/10603/443781#',
-  },
-  {
-    id: 2,
     title: 'Stability analysis and design of wide area damping controllers',
-    description: 'Research on the latest trends in AI and machine learning.',
+    description: 'Researcher: Kevin Gajjar, Guide: A M Kulkarni',
     link: 'https://shodhganga.inflibnet.ac.in/handle/10603/609476',
   },
   {
+    id: 2,
+    title: 'Emt companion circuit based approach for eigenanalysis of power systems with power electronic controllers',
+    description: 'Researcher: Vinay T S Chindu, Guide: A M Kulkarni',
+    link: 'https://shodhganga.inflibnet.ac.in/handle/10603/611032',
+  },
+  {
     id: 3,
-    title: 'Robotics and Automation',
-    description: 'Innovations in robotics and automation technologies.',
-    link: 'https://example.com/robotics-automation',
+    title: 'Passivity based decentralized small signal stability criteria for power systems',
+    description: 'Researcher: Kaustav Dey, Guide: A M Kulkarni',
+    link: 'https://shodhganga.inflibnet.ac.in/handle/10603/443781#',
   },
   // Add more topics as needed
 ];
@@ -25,7 +26,7 @@ const researchTopics = [
 const ResearchPage = () => {
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold text-center mb-8">Research Topics</h1>
+      <h1 className="text-3xl font-bold text-center mb-8">Explore Research Thesis</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {researchTopics.map((research) => (

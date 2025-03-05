@@ -99,8 +99,6 @@ export default function Library() {
                 <th className="px-6 py-4 text-left">Author</th>
                 <th className="px-6 py-4 text-left">Subject</th>
                 <th className="px-6 py-4 text-left">Edition</th>
-                <th className="px-6 py-4 text-left">Copies</th>
-                <th className="px-6 py-4 text-left">Cover</th>
               </tr>
             </thead>
             <tbody>
@@ -117,14 +115,6 @@ export default function Library() {
                     <td className="px-6 py-4">{book.author}</td>
                     <td className="px-6 py-4">{book.subject}</td>
                     <td className="px-6 py-4">{book.edition}</td>
-                    <td className="px-6 py-4">{book.copies}</td>
-                    <td className="px-6 py-4">
-                      <img
-                        src={book.cover}
-                        alt="Book Cover"
-                        className="w-16 h-16 object-cover rounded"
-                      />
-                    </td>
                   </tr>
                 ))
               )}

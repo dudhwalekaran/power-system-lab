@@ -30,12 +30,14 @@
     "next": "^15.2.0",
     "next-connect": "^1.0.0",
     "nodemailer": "^6.10.0",
+    "papaparse": "^5.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "run": "^1.5.0",
     "sass": "^1.84.0",
     "scss": "^0.2.4",
+    "shadcn-ui": "^0.9.5",
     "wordcloud": "^1.2.3"
   },
   "devDependencies": {

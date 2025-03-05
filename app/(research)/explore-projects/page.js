@@ -4,37 +4,24 @@ const projects = [
   {
     title: "Dynamic Voltage Restorer",
     description:
-      "This project focuses on improving the efficiency and stability of power grids using machine learning algorithms for load forecasting and dynamic grid reconfiguration.",
-    image: "/images/grid.avif",
-    details: [
-      "Developed load forecasting models using machine learning.",
-      "Designed dynamic grid reconfiguration techniques.",
-      "Conducted simulations to test algorithm effectiveness.",
-    ],
+      "Voltage sags within power distribution systems are typically observed to occur due to a significant drop in the voltage level of only one phase. The faculties at Power electronics and Power system in IIT Bombay in collaboration with TATA Power developed a novel super-capacitor based transformerless Dynamic Voltage Restorer (DVR) with a Reconfigurable Thyristor Network (RTN), which can be used for compensating the phase with the largest voltage sag. Usage of the RTN in this approach overcomes the need for dedicated power conditioning units for each of the three phases, thereby eliminating redundant switching, magnetic and energy storage elements and other auxiliary components. This reduces system weight, size and cost. A laboratory prototype has been built and the response of the controller tested on a real-time digital simulator for proof-of-concept",
+    image: "/images/transformer.avif",
+    link: "/projects/dynamic-voltage-restorer", // Add the link for project details
   },
   {
-    title: "High Speed rail coperation",
+    title: "Electric Traction Power Supply System (eTPSS)",
     description:
-      "Design and implementation of a solar-powered microgrid system to supply electricity to remote areas using renewable energy sources.",
-    image: "/images/energy.avif",
-    details: [
-      "Designed solar panels layout and battery storage systems.",
-      "Implemented energy management system for optimal operation.",
-      "Conducted load analysis for off-grid communities.",
-    ],
+      "The planning and design of a traction power supply system requires extensive simulation studies to be carried out by the utilities and the railways. The recent developments in various metro projects and the introduction of High speed railway in India has created a necessity and an opportunity to develop an indigenous, flexible and an integrated simulation software. Indian Institute of Science (IISc Banga-lore), Indian Institute of Technology, Bombay (IITB)",
+    image: "/images/rail.jpg",
+    link: "/projects/etpss", // Add the link for project details
   },
   {
-    title: "Smart Metering for Power Systems",
+    title: "Miniature Model of Full Spectrum Simulator (FSS MINI)",
     description:
-      "This project involves the development of an IoT-based smart metering system to monitor and manage electricity consumption in real-time.",
-    image: "/images/smart-metering.jpg",
-    details: [
-      "Developed IoT-based energy monitoring devices.",
-      "Implemented cloud-based data analytics for real-time insights.",
-      "Integrated with existing power grid infrastructure.",
-    ],
+      "An indigenously developed system that provides both off-line and real-time simulation capabilities at an affordable cost, easily configurable for custom applications. A Miniature version is configured as an educational package and small system simulation.",
+    image: "/images/fssmini.jpg",
+    link: "/projects/fss-mini", // Add the link for project details
   },
-  // Add more projects with images
 ];
 
 const ProjectsPage = () => {
@@ -64,23 +51,18 @@ const ProjectsPage = () => {
               <h2 className="text-2xl font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300">
                 {project.title}
               </h2>
-              <p className="text-gray-500 mt-2 text-base">{project.description}</p>
-
-              {/* Key Highlights */}
-              <div className="mt-4">
-                <h3 className="font-semibold text-lg text-gray-700">Key Highlights:</h3>
-                <ul className="list-disc pl-6 mt-2 text-gray-600">
-                  {project.details.map((detail, index) => (
-                    <li key={index} className="text-sm">{detail}</li>
-                  ))}
-                </ul>
-              </div>
+              <p className="text-gray-500 mt-2 text-base">
+                {project.description}
+              </p>
 
               {/* View Details Button */}
               <div className="mt-6 text-center">
-                <button className="bg-blue-600 text-white px-6 py-2 rounded-md text-lg font-medium transition-all duration-300 transform hover:bg-blue-700 hover:scale-105">
+                <a
+                  href={project.link} // Use the `link` property here
+                  className="bg-blue-600 text-white px-6 py-2 rounded-md text-lg font-medium transition-all duration-300 transform hover:bg-blue-700 hover:scale-105"
+                >
                   View Project Details
-                </button>
+                </a>
               </div>
             </div>
           </div>

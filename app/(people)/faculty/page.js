@@ -60,7 +60,7 @@ export default function Faculty() {
   return (
     <div className="bg-gray-50 text-gray-900 py-12">
       <div className="container mx-auto px-6">
-        <h1 className="text-3xl font-semibold text-center text-gray-800 mb-12">Lab Professors</h1>
+        <h1 className="text-2xl font-semibold text-center text-gray-800 mb-12">Lab Professors</h1>
         <p className="text-lg text-center mb-12 text-gray-600">
           Meet the Lab Professors of the IITB Power Systems Lab. Our professors are experts in their respective fields, driving innovation and cutting-edge research in power systems and electrical engineering.
         </p>
@@ -68,7 +68,7 @@ export default function Faculty() {
         {/* Faculty Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {facultyMembers.map((faculty, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md text-left transform transition duration-500 hover:scale-105 hover:shadow-xl max-w-xl">
+            <div key={index} className="bg-white p-6 rounded-lg shadow-md text-left transform transition duration-500 hover:scale-105 hover:shadow-xl max-w-lg">
               <div className="flex items-center mb-4">
                 <img
                   src={faculty.image}

@@ -75,13 +75,6 @@ export default function Home() {
               Upmath
             </Link>
             <Link
-              href="/tawk"
-              onClick={toggleSidebar}
-              className="text-white text-lg hover:text-indigo-400 transition-colors"
-            >
-              Tawk Chat
-            </Link>
-            <Link
               href="/excalidraw"
               onClick={toggleSidebar}
               className="text-white text-lg hover:text-indigo-400 transition-colors"
@@ -205,8 +198,8 @@ export default function Home() {
                 </h3>
               </div>
               <p className="text-gray-700 mb-4">
-                Upload and manage educational materials like videos, slides, and
-                notes for students.
+                Upload and manage educational materials like videos for
+                students.
               </p>
               <a
                 href="/resources"
@@ -216,7 +209,7 @@ export default function Home() {
               </a>
             </div>
 
-              {/* File upload Resources Box */}
+            {/* File upload Resources Box */}
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
               <div className="flex items-center space-x-4 mb-4">
                 <div className="w-12 h-12 bg-blue-500 text-white flex items-center justify-center rounded-full">
@@ -230,11 +223,22 @@ export default function Home() {
                 Upload and manage your code files, scripts, and projects for
                 easy sharing.
               </p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdD6yPiYajXQOJAqqQOsQAw1AfE6XlhLMB1afqo6NN3qFO_jQ/viewform?usp=dialog" target="__black" className="text-blue-500 hover:text-blue-700">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdD6yPiYajXQOJAqqQOsQAw1AfE6XlhLMB1afqo6NN3qFO_jQ/viewform?usp=dialog"
+                target="__black"
+                className="text-blue-500 hover:text-blue-700"
+              >
                 Go to Upload
               </a>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center items-center">
+          <Link href="/">
+            <button className="rounded-lg p-3 mt-10 bg-red-600 text-white font-semibold px-10">
+              Log out
+            </button>
+          </Link>
         </div>
       </div>
     </div>
