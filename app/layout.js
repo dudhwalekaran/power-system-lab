@@ -8,38 +8,39 @@ import "./globals.css"; // Import global styles if you have them
 // Header Component with Logo, Centered Nav, and Hamburger
 const Header = ({ toggleSidebar }) => {
   return (
-    <header className="bg-gray-900 text-white p-4 flex justify-between items-center">
-      {/*<button onClick={toggleSidebar} className="text-2xl">
-        <i className="fas fa-bars"></i> {/* Hamburger Icon (Font Awesome) 
-      </button>*/}
+    <header className="bg-[#2c3e50] text-white p-4 flex justify-between items-center">
+      {/* Optional Sidebar Toggle */}
+      {/* <button onClick={toggleSidebar} className="text-2xl">
+    <i className="fas fa-bars"></i> {/* Hamburger Icon (Font Awesome) 
+  </button> */}
 
       <nav className="flex-grow flex justify-center text-xl font-serif space-x-6 overflow-visible">
         <div className="relative group">
-          <Link href="/" className="hover:text-indigo-400 transition-colors">
+          <Link href="/" className="hover:text-[#f39c12] transition-colors">
             Academics/Research
           </Link>
-            <div className="absolute left-0 mt-2 bg-gray-800 w-48 opacity-0 text-lg group-hover:opacity-100 max-h-0 group-hover:max-h-44 overflow-hidden transform transition-all ease-in-out duration-300 shadow-md group-hover:visible z-50">
+          <div className="absolute left-0 mt-2 bg-[#34495e] w-48 opacity-0 text-lg group-hover:opacity-100 max-h-0 group-hover:max-h-44 overflow-hidden transform transition-all ease-in-out duration-300 shadow-md group-hover:visible z-50">
             <Link
               href="/subject"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
             >
               Subject & Areas
             </Link>
             <Link
               href="/research"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
             >
               Research
             </Link>
             <Link
               href="/current-research"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
             >
               Current Research
             </Link>
             <Link
               href="/explore-projects"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
             >
               Explore Projects
             </Link>
@@ -47,37 +48,37 @@ const Header = ({ toggleSidebar }) => {
         </div>
 
         <div className="relative group">
-          <Link href="/" className="hover:text-indigo-400 transition-colors">
+          <Link href="/" className="hover:text-[#f39c12] transition-colors">
             Laboratory Facilities
           </Link>
         </div>
 
         <div className="relative group">
-          <Link href="" className="hover:text-indigo-400 transition-colors">
+          <Link href="" className="hover:text-[#f39c12] transition-colors">
             Resources
           </Link>
-          <div className="absolute left-0 mt-2 bg-gray-800 w-48 opacity-0 text-lg group-hover:opacity-100 max-h-0 group-hover:max-h-52 overflow-hidden transform transition-all ease-in-out duration-300 shadow-md group-hover:visible z-50">
+          <div className="absolute left-0 mt-2 bg-[#34495e] w-48 opacity-0 text-lg group-hover:opacity-100 max-h-0 group-hover:max-h-52 overflow-hidden transform transition-all ease-in-out duration-300 shadow-md group-hover:visible z-50">
             <Link
               href="/library"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
             >
               Library
             </Link>
             <Link
               href="/softwares"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
             >
               Softwares
             </Link>
             <Link
               href="/youtube-videos"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
             >
               Educational Videos
             </Link>
             <Link
               href="https://mkdocs-three.vercel.app/"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
               target="_blank"
             >
               Educational Content
@@ -86,41 +87,41 @@ const Header = ({ toggleSidebar }) => {
         </div>
 
         <div className="relative group">
-          <Link href="" className="hover:text-indigo-400 transition-colors">
+          <Link href="" className="hover:text-[#f39c12] transition-colors">
             People
           </Link>
-          <div className="absolute left-0 mt-2 bg-gray-800 w-48 opacity-0 text-lg group-hover:opacity-100 max-h-0 group-hover:max-h-52 overflow-hidden transform transition-all ease-in-out duration-300 shadow-md group-hover:visible z-50">
+          <div className="absolute left-0 mt-2 bg-[#34495e] w-48 opacity-0 text-lg group-hover:opacity-100 max-h-0 group-hover:max-h-52 overflow-hidden transform transition-all ease-in-out duration-300 shadow-md group-hover:visible z-50">
             <Link
               href="/faculty"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
             >
               Faculty
             </Link>
             <Link
               href="/students"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
             >
               Students
             </Link>
             <Link
               href="/alumni"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
             >
               Alumni
             </Link>
             <Link
               href="/staff"
-              className="block text-white py-2 px-4 hover:bg-gray-700"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
             >
               Staff
             </Link>
           </div>
         </div>
 
-        <Link href="news" className="hover:text-indigo-400 transition-colors">
+        <Link href="news" className="hover:text-[#f39c12] transition-colors">
           News
         </Link>
-        <Link href="login" className="hover:text-indigo-400 transition-colors">
+        <Link href="login" className="hover:text-[#f39c12] transition-colors">
           Login
         </Link>
       </nav>
@@ -175,11 +176,11 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => (
       </div>
     </div>
   </div>
-); 
+);
 
 // Footer Component with Social Links
 const Footer = () => (
-  <footer className="bg-gray-800 text-white py-8 mt-auto">
+  <footer className="bg-[#2C3E50] text-white py-8 mt-auto">
     <div className="container mx-auto text-center">
       <div className="space-x-6 mb-4">
         <a

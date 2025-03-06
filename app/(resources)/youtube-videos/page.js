@@ -84,8 +84,8 @@ export default function Home() {
   );
 
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold text-center mb-6">
+    <div className="p-6 bg-gray-50 min-h-screen">
+      <h1 className="text-4xl font-semibold text-center mb-8 text-gray-800">
         YouTube Playlist Videos
       </h1>
 
@@ -98,7 +98,7 @@ export default function Home() {
       ) : (
         <>
           {/* Playlist Tabs */}
-          <div className="flex space-x-2 mb-4 overflow-x-auto">
+          <div className="flex space-x-4 mb-6 overflow-x-auto">
             {playlists.map((playlist) => (
               <button
                 key={playlist}
@@ -106,28 +106,30 @@ export default function Home() {
                   setSelectedPlaylist(playlist);
                   setCurrentIndex(0); // Reset pagination when changing playlist
                 }}
-                className={`px-4 py-2 rounded-md font-medium ${
+                className={`px-6 py-3 text-lg rounded-lg transition-all ease-in-out duration-300 font-medium ${
                   selectedPlaylist === playlist
-                    ? "bg-blue-500 text-white"
-                    : "bg-gray-200 text-gray-700"
+                    ? "bg-teal-600 text-white shadow-lg"
+                    : "bg-gray-200 text-gray-700 hover:bg-teal-500"
                 }`}
               >
-                {playlistNameMapping[playlist] || playlist}{" "}
-                {/* Show mapped name if exists */}
+                {playlistNameMapping[playlist] || playlist}
               </button>
             ))}
           </div>
 
           {/* Video List */}
-          <div className="bg-white p-4 rounded-lg shadow-lg">
-            <ul className="space-y-3">
+          <div className="bg-white p-6 rounded-lg shadow-xl">
+            <ul className="space-y-4">
               {paginatedVideos.map((video, index) => (
-                <li key={index} className="border-b pb-2">
+                <li
+                  key={index}
+                  className="transition-all ease-in-out duration-300 transform"
+                >
                   <a
                     href={video.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-blue-500 hover:underline"
+                    className="text-lg text-blue-600 hover:text-teal-600 hover:underline"
                   >
                     {video.title}
                   </a>
@@ -137,16 +139,16 @@ export default function Home() {
           </div>
 
           {/* Pagination Controls */}
-          <div className="flex justify-between mt-4">
+          <div className="flex justify-between mt-6">
             <button
               onClick={() =>
                 setCurrentIndex((prev) => Math.max(0, prev - videosPerPage))
               }
               disabled={currentIndex === 0}
-              className={`px-4 py-2 rounded-md font-medium ${
+              className={`px-6 py-3 rounded-lg font-medium text-lg transition-all ease-in-out duration-300 ${
                 currentIndex === 0
-                  ? "bg-gray-300 text-gray-500"
-                  : "bg-blue-500 text-white"
+                  ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                  : "bg-teal-600 text-white"
               }`}
             >
               Previous
@@ -158,10 +160,10 @@ export default function Home() {
                 )
               }
               disabled={currentIndex + videosPerPage >= filteredVideos.length}
-              className={`px-4 py-2 rounded-md font-medium ${
+              className={`px-6 py-3 rounded-lg font-medium text-lg transition-all ease-in-out duration-300 ${
                 currentIndex + videosPerPage >= filteredVideos.length
-                  ? "bg-gray-300 text-gray-500"
-                  : "bg-blue-500 text-white"
+                  ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                  : "bg-teal-600 text-white"
               }`}
             >
               Next
