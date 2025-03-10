@@ -141,7 +141,7 @@ export default function Home() {
 
   // List of image URLs
   const images = [
-    "/images/pic2.png",
+    "https://img.freepik.com/free-photo/sun-setting-silhouette-electricity-pylons_1127-3239.jpg?uid=R182936256&ga=GA1.1.665111150.1730113177&semt=ais_hybrid",
     "/images/pic3.png", // Add your third image
     "/images/transformer.avif", // Add your second image
   ];
