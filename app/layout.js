@@ -193,7 +193,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => (
 
 // Footer Component with Social Links
 const Footer = () => (
-  <footer className="bg-[#2C3E50] text-white py-8 mt-auto">
+  <footer className="bg-[#1B1F3B] text-white py-8 mt-auto">
     <div className="container mx-auto text-center">
       <div className="space-x-6 mb-4">
         <a
