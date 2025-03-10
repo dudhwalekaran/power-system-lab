@@ -55,7 +55,7 @@ const ProjectsPage = () => {
                 {project.description}
               </p>
 
-              {/* View Details Button */}
+              {/* View Details Button 
               <div className="mt-6 text-center">
                 <a
                   href={project.link} // Use the `link` property here
@@ -63,7 +63,7 @@ const ProjectsPage = () => {
                 >
                   View Project Details
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}
