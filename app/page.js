@@ -161,7 +161,7 @@ export default function Home() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          minHeight: "75vh",
+          minHeight: "60vh",
           width: "100%",
           transition: "background-image 0.5s ease-in-out", // Smooth transition for image change
         }}
