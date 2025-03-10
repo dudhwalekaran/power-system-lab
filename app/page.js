@@ -155,33 +155,34 @@ export default function Home() {
     <div className="font-sans bg-gray-100 text-gray-900 scroll-smooth">
       {/* Hero Section */}
       <section
-        className="text-white flex items-center justify-center bg-center"
-        style={{
-          backgroundImage: `url(${images[currentImageIndex]})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          minHeight: "55vh",
-          width: "100%",
-          transition: "background-image 0.5s ease-in-out", // Smooth transition for image change
-        }}
-        onClick={handleImageChange} // Trigger image change on click
-      >
-        <div className="container mx-auto text-center px-6 py-12 relative">
-          <h1
-            className="text-5xl font-extrabold mb-4 text-white relative z-10"
-            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }} // Adding text shadow for better contrast
-          >
-            Welcome to the Power Systems Lab
-          </h1>
-          <p
-            className="text-2xl font-semibold md:text-xl mb-8 leading-relaxed text-white relative z-10"
-            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }} // Text shadow for better visibility
-          >
-            IIT Bombay
-          </p>
-        </div>
-      </section>
+  className="text-white flex items-center justify-center bg-center"
+  style={{
+    backgroundImage: `url(${images[currentImageIndex]})`,
+    backgroundSize: "contain", // or keep "cover" based on your preference
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    minHeight: "75vh", // Ensure this is set based on your needs
+    width: "100%",
+    transition: "background-image 0.5s ease-in-out", // Smooth transition for image change
+  }}
+  onClick={handleImageChange} // Trigger image change on click
+>
+  <div className="container mx-auto text-center px-6 py-12 relative">
+    <h1
+      className="text-5xl font-extrabold mb-4 text-white relative z-10"
+      style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }} // Adding text shadow for better contrast
+    >
+      Welcome to the Power Systems Lab
+    </h1>
+    <p
+      className="text-2xl font-semibold md:text-xl mb-8 leading-relaxed text-white relative z-10"
+      style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }} // Text shadow for better visibility
+    >
+      IIT Bombay
+    </p>
+  </div>
+</section>
+
       {/* About Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto flex items-center justify-center px-4 md:px-0">
