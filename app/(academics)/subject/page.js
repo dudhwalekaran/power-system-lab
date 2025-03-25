@@ -22,7 +22,7 @@ export default function Academics() {
         applications:
           "This course helps students develop the necessary skills to analyze power systems under various conditions, ensuring efficient and stable electricity distribution across regions.",
       },
-      link: "https://www.youtube.com/"
+      link: "https://www.youtube.com/",
     },
     CAPSA: {
       description:
@@ -55,7 +55,7 @@ export default function Academics() {
         applications:
           "This course prepares students to tackle challenges like energy crisis management, grid reliability, and system optimization under changing demand.",
       },
-      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20658"
+      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20658",
     },
     "Dynamics and Transients": {
       description:
@@ -88,7 +88,7 @@ export default function Academics() {
         applications:
           "This course teaches students the design and operational implementation of protection schemes that are widely used in industry, protecting critical infrastructure from failures.",
       },
-      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20651"
+      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20651",
     },
     "Power System Economics": {
       description:
@@ -121,7 +121,7 @@ export default function Academics() {
         applications:
           "This course prepares students to understand and design HVDC systems for both interconnection of power grids and the integration of renewable energy sources.",
       },
-      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20686"
+      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20686",
     },
     Mathematics: {
       description:
@@ -138,7 +138,7 @@ export default function Academics() {
         applications:
           "Students will gain the mathematical skills to model and analyze power systems, from optimization to dynamic analysis of system behavior.",
       },
-      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20759"
+      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20759",
     },
     "Electrical Grid/Measurement/Design/Control (Miscellaneous)": {
       description:
@@ -171,7 +171,7 @@ export default function Academics() {
         applications:
           "Students will apply control theory to power systems, robotics, and automation, learning to ensure the desired performance of various dynamic systems.",
       },
-      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20302"
+      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20302",
     },
     "Digital Communication": {
       description:
@@ -220,7 +220,7 @@ export default function Academics() {
         applications:
           "Students will learn to design and implement embedded systems, applying microprocessor technologies in fields such as control, automation, and power systems.",
       },
-      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20309"
+      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20309",
     },
     Machine: {
       description:
@@ -237,6 +237,7 @@ export default function Academics() {
         applications:
           "This course will teach students to apply machine learning models in tasks such as system prediction, fault detection, and optimization in power systems.",
       },
+      link: "https://youtube.com",
     },
     "Power Electronics": {
       description:
@@ -253,7 +254,7 @@ export default function Academics() {
         applications:
           "Students will gain knowledge on the design of power electronic systems for energy conversion and efficient management of electrical power.",
       },
-      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20309"
+      link: "https://portal.iitb.ac.in/asc/Courses/crsedetail.jsp?ccd=EE%20309",
     },
     "Computer Programming": {
       description:
@@ -362,12 +363,14 @@ export default function Academics() {
             <p className="text-lg max-w-4xl mx-auto mb-6">
               {subjectDetails[selectedSubject].moreDetails.applications}
             </p>
-            <Link
-              href={subjectDetails[selectedSubject].link} // Dynamically set the link
-              className="bg-indigo-600 px-6 py-3 text-white rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300"
-            >
-              Explore Full Course Catalog
-            </Link>
+            {subjectDetails[selectedSubject].link && (
+              <Link
+                href={subjectDetails[selectedSubject].link}
+                className="bg-indigo-600 px-6 py-3 text-white rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300"
+              >
+                Explore Full Course Catalog
+              </Link>
+            )}
           </div>
         </section>
       )}

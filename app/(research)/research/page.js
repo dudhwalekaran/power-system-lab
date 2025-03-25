@@ -5,19 +5,19 @@ const researchTopics = [
   {
     id: 1,
     title: 'Stability analysis and design of wide area damping controllers',
-    description: 'Researcher: Kevin Gajjar, Guide: A M Kulkarni',
+    description: 'Kevin Gajjar, Guide: A M Kulkarni',
     link: 'https://shodhganga.inflibnet.ac.in/handle/10603/609476',
   },
   {
     id: 2,
     title: 'Emt companion circuit based approach for eigenanalysis of power systems with power electronic controllers',
-    description: 'Researcher: Vinay T S Chindu, Guide: A M Kulkarni',
+    description: 'Vinay T S Chindu, Guide: A M Kulkarni',
     link: 'https://shodhganga.inflibnet.ac.in/handle/10603/611032',
   },
   {
     id: 3,
     title: 'Passivity based decentralized small signal stability criteria for power systems',
-    description: 'Researcher: Kaustav Dey, Guide: A M Kulkarni',
+    description: 'Kaustav Dey, Guide: A M Kulkarni',
     link: 'https://shodhganga.inflibnet.ac.in/handle/10603/443781#',
   },
   // Add more topics as needed

@@ -64,6 +64,19 @@ export default function FreeSoftwares() {
             Visit Website
           </a>
         </div>
+
+        <div className="flex justify-center items-center">
+          <div className="text-center mb-10">
+            <h1 className="text-4xl font-semibold mb-4">Download Your File</h1>
+            <a
+              href="/Power_flow.zip"
+              download
+              className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+            >
+              Click to Download Zip File
+            </a>
+          </div>
+        </div>
       </div>
       <div className="container mx-auto px-6">
         <h1 className="text-3xl font-semibold text-center text-gray-800 mb-12">

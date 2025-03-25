@@ -1,8 +1,7 @@
-// app/pages/login.js
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
 export default function Login() {
@@ -32,6 +31,13 @@ export default function Login() {
 
       const data = await res.json();
       if (res.status === 200) {
+        // Log the JWT token to the console
+        console.log('Generated JWT Token:', data.token);
+
+        // Store the JWT token and user data in localStorage
+        localStorage.setItem('token', data.token);
+        localStorage.setItem('user', JSON.stringify(data.user));
+
         setIsSubmitted(true);
         setTimeout(() => router.push('/home'), 2000); // Redirect to home after successful login
       } else {
@@ -73,7 +79,20 @@ export default function Login() {
               {isSubmitted ? 'Logged In!' : 'Login'}
             </button>
 
-            <p className='fles justify-center items-center'>Don't have an account? <Link href="/signup"><span className='text-blue-500'> Sign Up</span></Link></p>
+            {/* Forgot Password Link */}
+            <p className="text-center mt-2">
+              <Link href="/reset-password" className="text-blue-500 hover:underline">
+                Forgot Password?
+              </Link>
+            </p>
+
+            <p className="text-center mt-4">
+              Don't have an account?{' '}
+              <Link href="/signup">
+                <span className="text-blue-500 hover:underline">Sign Up</span>
+              </Link>
+            </p>
+
             {error && <p className="text-red-500 text-center mt-4">{error}</p>}
           </div>
         </form>

@@ -86,7 +86,7 @@ export default function Home() {
   return (
     <div className="p-6 bg-gray-50 min-h-screen">
       <h1 className="text-4xl font-semibold text-center mb-8 text-gray-800">
-        YouTube Playlist Videos
+        Video lectures/ Tutorials
       </h1>
 
       {loading ? (
@@ -97,24 +97,35 @@ export default function Home() {
         <p className="text-center text-gray-500">No videos found.</p>
       ) : (
         <>
-          {/* Playlist Tabs */}
-          <div className="flex space-x-4 mb-6 overflow-x-auto">
-            {playlists.map((playlist) => (
-              <button
-                key={playlist}
-                onClick={() => {
-                  setSelectedPlaylist(playlist);
-                  setCurrentIndex(0); // Reset pagination when changing playlist
-                }}
-                className={`px-6 py-3 text-lg rounded-lg transition-all ease-in-out duration-300 font-medium ${
-                  selectedPlaylist === playlist
-                    ? "bg-teal-600 text-white shadow-lg"
-                    : "bg-gray-200 text-gray-700 hover:bg-teal-500"
-                }`}
-              >
-                {playlistNameMapping[playlist] || playlist}
-              </button>
-            ))}
+          {/* Playlist Tabs with Horizontal Scrolling */}
+          <div className="mb-6">
+            <div
+              className="flex space-x-4 overflow-x-auto scrollbar-hide"
+              style={{
+                maxWidth: "100%", // Ensure container doesn't exceed parent width
+                scrollBehavior: "smooth",
+              }}
+            >
+              {playlists.map((playlist) => (
+                <button
+                  key={playlist}
+                  onClick={() => {
+                    setSelectedPlaylist(playlist);
+                    setCurrentIndex(0); // Reset pagination when changing playlist
+                  }}
+                  className={`flex-shrink-0 px-6 py-3 text-lg rounded-lg transition-all ease-in-out duration-300 font-medium ${
+                    selectedPlaylist === playlist
+                      ? "bg-teal-600 text-white shadow-lg"
+                      : "bg-gray-200 text-gray-700 hover:bg-teal-500"
+                  }`}
+                  style={{
+                    minWidth: "calc(20% - 1rem)", // Ensure 5 tabs fit within the container (20% each minus spacing)
+                  }}
+                >
+                  {playlistNameMapping[playlist] || playlist}
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Video List */}

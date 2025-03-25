@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@cometchat-pro/chat": "^3.0.13",
@@ -17,11 +18,13 @@
     "cloudinary": "^2.5.1",
     "cors": "^2.8.5",
     "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.7",
     "formidable": "^3.5.2",
     "formidable-serverless": "^1.1.1",
     "fs": "^0.0.1-security",
     "googleapis": "^144.0.0",
     "json": "^11.0.0",
+    "jsonwebtoken": "^9.0.2",
     "mongo": "^0.1.0",
     "mongod": "^2.0.0",
     "mongodb": "^6.13.1",

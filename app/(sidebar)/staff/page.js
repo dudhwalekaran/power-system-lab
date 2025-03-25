@@ -17,7 +17,7 @@ const labMembers = [
     title: 'Technical Support',
     bio: '',
     email: 'Not Available',
-    image: '/staff/john-doe.jpg', // Replace with actual path
+    image: '/staff/harshala.jpg', // Replace with actual path
     linkedin: 'Not available',
   },
   // Add more lab members here...

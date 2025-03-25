@@ -10,19 +10,17 @@ export default function AlumniStudents() {
       graduationYear: "2019",
       currentPosition: "Not Available",
       subject: "Not Available",
-      email: "Not Available",
       website: "https://www.linkedin.com/in/santosh-singh-42915473/",
       image: "/alumni/user.gif", // Replace with actual image URL
     },
     {
       name: "Vinay Chindu",
       degree: "PhD in Electrical Engineering",
-      graduationYear: "2023",
-      currentPosition: "Not Available",
+      graduationYear: "2024",
+      currentPosition: "Power Research and Development Consultants Pvt Ltd",
       subject: "power system modelling specifically EMT modelling",
-      email: "vinaychindu@gmail.com",
       website: "https://www.linkedin.com/in/vinay-chindu-7b43b253/",
-      image: "/alumni/vinay.jpg", // Replace with actual image URL
+      image: "/alumni/user.gif", // Replace with actual image URL
     },
     {
       name: "Dr. Kevin Gujjar",
@@ -30,27 +28,24 @@ export default function AlumniStudents() {
       graduationYear: "2023",
       currentPosition: "R&D Senior Engineer at Hitachi Energy",
       subject: "Stability Analysis and Design of Wide-Area Damping Controllers",
-      email: "not available",
       website: "https://www.linkedin.com/in/kevin-gajjar-ph-d-a4317b74/",
       image: "/alumni/kevin.jpeg", // Replace with actual image URL
     },
     {
       name: "Dr. Kaustav Dey",
       degree: "phD in Electrical Engineering",
-      graduationYear: "",
-      currentPosition: "",
-      subject: "Not Available",
-      email: "Not Available",
-      website: "not available",
+      graduationYear: "2022",
+      currentPosition: "L&T Technology Services",
+      subject: "Power electronics and power system",
+      website: "https://www.linkedin.com/in/kaustav-dey-ph-d-mieee-miet-4665a5110/",
       image: "/alumni/kaustav.jpeg", // Replace with actual image URL
     },
     {
-      name: "Dr. Rathin Dholakiya",
-      degree: "phD in Electrical Engineering",
+      name: "Rathin Dholakiya",
+      degree: "MTech in Electrical Engineering",
       graduationYear: "2017",
       currentPosition: "Team Lead, Energy Market Analyst at Energy Exemplar",
       subject: "Power System modelling & analysis",
-      email: "not available",
       website: "https://www.jessicawhite.com",
       image: "/alumni/rathin.jpeg", // Replace with actual image URL
     },
@@ -58,9 +53,8 @@ export default function AlumniStudents() {
       name: "Dr. Kunal Salunkhe",
       degree: "PhD in Electrical Engineeging",
       graduationYear: "2016",
-      currentPosition: "Not available",
-      subject: "Not Available",
-      email: "Not Available",
+      currentPosition: "Senior System Performance Engineer",
+      subject: "Power System",
       website: "https://www.linkedin.com/in/dr-kunal-salunkhe-7a511b119/",
       image: "/alumni/kunal.jpeg", // Replace with actual image URL
     },
@@ -69,9 +63,8 @@ export default function AlumniStudents() {
       degree: "PhD in Electrical Engineering",
       graduationYear: "2016",
       currentPosition: "Power System Studies Specialist at Electranix Corporation",
-      subject: "not available",
-      email: "not available",
-      website: "linkedin.com/in/mukesh-kumar-das-41479b34",
+      subject: "Electrical Engineering/Power system",
+      website: "https://www.linkedin.com/in/mukesh-kumar-das-41479b34",
       image: "/alumni/mukesh.jpeg", // Replace with actual image URL
     },
     {
@@ -79,8 +72,7 @@ export default function AlumniStudents() {
       degree: "phD in Electrical Engineering",
       graduationYear: "2011",
       currentPosition: "Director at Nayak Power Systems Pvt. Ltd.",
-      subject: "Not available",
-      email: "not available",
+      subject: "Power electronics and Power system",
       website: "https://www.linkedin.com/in/ashwin-damle-03452a215/",
       image: "/alumni/ashwin.jpeg", // Replace with actual image URL
     },
@@ -88,10 +80,18 @@ export default function AlumniStudents() {
       name: "Dr. Elizabeth Cheriyan",
       degree: "phD in Electrical Engineering",
       graduationYear: "2011",
-      currentPosition: "Not Available",
-      subject: "Smart Grid loT",
-      email: "not available",
-      website: "https://www.linkedin.com/in/ashwin-damle-03452a215/",
+      currentPosition: "Power electronics",
+      subject: "Specialized in Power and Energy Systems",
+      website: "https://www.linkedin.com/in/dr-elizabeth-cheriyan-1959b3125/",
+      image: "/alumni/user.gif", // Replace with actual image URL
+    },
+    {
+      name: "Dr. Shilpi Kedia",
+      degree: "phD in Electrical Engineering",
+      graduationYear: "2024",
+      currentPosition: "not available",
+      subject: "High power electronics converter",
+      website: "https://www.linkedin.com/in/shilpi-kedia-7a7776b4/",
       image: "/alumni/user.gif", // Replace with actual image URL
     }
   ];
@@ -164,7 +164,6 @@ export default function AlumniStudents() {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                 Contact {selectedAlumnus.name}
               </h2>
-              <p className="text-gray-600 mb-4">Email: <a href={`mailto:${selectedAlumnus.email}`} className="text-blue-600">{selectedAlumnus.email}</a></p>
               <p className="text-gray-600 mb-4">Website: <a href={selectedAlumnus.website} target="_blank" rel="noopener noreferrer" className="text-blue-600">{selectedAlumnus.website}</a></p>
             </div>
           </div>

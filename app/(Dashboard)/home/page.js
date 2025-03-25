@@ -1,10 +1,11 @@
 "use client"; // Ensure this runs on the client-side
 import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation"; // Use this to get the current pathname
+import { usePathname, useRouter } from "next/navigation"; // Use this to get the current pathname and router for redirection
 import Link from "next/link";
 
 export default function Home() {
   const pathname = usePathname(); // Get the current path
+  const router = useRouter(); // Use router for programmatic navigation
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
 
@@ -19,6 +20,23 @@ export default function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Protect the route: redirect to login if no token
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      router.push('/login');
+    }
+  }, [router]);
+
+  // Logout function to clear token and redirect
+  const handleLogout = () => {
+    // Clear token and user data from localStorage
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    // Redirect to the login page
+    router.push('/login');
+  };
 
   // Render nothing if we want to hide the layout (header, sidebar, footer)
   if (shouldHideLayout) {
@@ -142,29 +160,6 @@ export default function Home() {
 
           {/* Quick Links Section */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Project Management Box */}
-            {/* <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
-            <div className="flex items-center space-x-4 mb-4">
-              <div className="w-12 h-12 bg-blue-500 text-white flex items-center justify-center rounded-full">
-                <span className="text-xl">📊</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900">Manage Projects</h3>
-            </div>
-            <p className="text-gray-700 mb-4">Create, manage, and track project progress with deadlines, goals, and assigned tasks.</p>
-            <a href="/projects" className="text-blue-500 hover:text-blue-700">Go to Projects</a>
-          </div>
-
-          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
-            <div className="flex items-center space-x-4 mb-4">
-              <div className="w-12 h-12 bg-blue-500 text-white flex items-center justify-center rounded-full">
-                <span className="text-xl">📊</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900">Assign Task</h3>
-            </div>
-            <p className="text-gray-700 mb-4">Assing task to the particular students</p>
-            <a href="/tasks" className="text-blue-500 hover:text-blue-700">Go to Tasks</a>
-          </div> */}
-
             {/* Equipment Management Box */}
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
               <div className="flex items-center space-x-4 mb-4">
@@ -225,7 +220,7 @@ export default function Home() {
               </p>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdD6yPiYajXQOJAqqQOsQAw1AfE6XlhLMB1afqo6NN3qFO_jQ/viewform?usp=dialog"
-                target="__black"
+                target="_blank"
                 className="text-blue-500 hover:text-blue-700"
               >
                 Go to Upload
@@ -233,12 +228,15 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Logout Button */}
         <div className="flex justify-center items-center">
-          <Link href="/">
-            <button className="rounded-lg p-3 mt-10 bg-red-600 text-white font-semibold px-10">
-              Log out
-            </button>
-          </Link>
+          <button
+            onClick={handleLogout}
+            className="rounded-lg p-3 mt-10 bg-red-600 text-white font-semibold px-10"
+          >
+            Log out
+          </button>
         </div>
       </div>
     </div>

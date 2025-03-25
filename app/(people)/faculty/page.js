@@ -4,7 +4,7 @@ export default function Faculty() {
   const facultyMembers = [
     {
       name: "Prof. Mahesh B Patil",
-      title: "Professor of Electrical Engineering",
+      title: "Professor in Electrical Engineering",
       researchInterests: [
         "Circuit simulation",
         "Simulation Tools",
@@ -18,7 +18,7 @@ export default function Faculty() {
     },
     {
       name: "Prof. Mukul Chandorkar",
-      title: "Professor of Electrical Engineering",
+      title: "Professor in Electrical Engineering",
       researchInterests: [
         "Not available",
       ],

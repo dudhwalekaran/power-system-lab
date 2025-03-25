@@ -9,11 +9,11 @@ import "./globals.css"; // Import global styles if you have them
 const Header = ({ toggleSidebar }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className="bg-[#1B1F3B] text-white p-4 flex justify-between items-center relative z-50">
+    <header className="bg-[#0A192F] text-white p-4 flex justify-between items-center relative z-50">
       {/* Hamburger Menu for Mobile */}
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="lg:hidden text-2xl z-50"
+        className="lg:hidden text-xl z-50"
       >
         <i className="fas fa-bars"></i> {/* Font Awesome Hamburger Icon */}
       </button>
@@ -27,32 +27,35 @@ const Header = ({ toggleSidebar }) => {
       >
         {/* Menu Items */}
         <div className="relative group w-full lg:w-auto">
-          <Link href="/" className="hover:text-[#f39c12] transition-colors">
+          <Link
+            href="/"
+            className="text-white hover:text-[#f39c12] transition-colors"
+          >
             Academics/Research
           </Link>
           {/* Dropdown */}
           <div className="absolute left-0 mt-2 bg-[#34495e] w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-md z-50">
             <Link
               href="/subject"
-              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors text-lg"
             >
               Subject & Areas
             </Link>
             <Link
               href="/research"
-              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors text-lg"
             >
               Research
             </Link>
             <Link
               href="/current-research"
-              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors text-lg"
             >
               Current Research
             </Link>
             <Link
               href="/explore-projects"
-              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors text-lg"
             >
               Explore Projects
             </Link>
@@ -72,25 +75,25 @@ const Header = ({ toggleSidebar }) => {
           <div className="absolute left-0 mt-2 bg-[#34495e] w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-md z-50">
             <Link
               href="/library"
-              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors text-lg"
             >
               Library
             </Link>
             <Link
               href="/softwares"
-              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors text-lg"
             >
               Softwares
             </Link>
             <Link
               href="/youtube-videos"
-              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors text-lg"
             >
               Educational Videos
             </Link>
             <Link
               href="https://mkdocs-three.vercel.app/"
-              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors text-lg"
               target="_blank"
             >
               Educational Content
@@ -105,25 +108,25 @@ const Header = ({ toggleSidebar }) => {
           <div className="absolute left-0 mt-2 bg-[#34495e] w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-md z-50">
             <Link
               href="/faculty"
-              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors text-lg"
             >
               Faculty
             </Link>
             <Link
               href="/students"
-              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors text-lg"
             >
               Students
             </Link>
             <Link
               href="/alumni"
-              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors text-lg"
             >
               Alumni
             </Link>
             <Link
               href="/staff"
-              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors"
+              className="block text-white py-2 px-4 hover:bg-[#f39c12] transition-colors text-lg"
             >
               Staff
             </Link>
@@ -213,9 +216,18 @@ const Footer = () => (
           <i className="fab fa-github"></i> GitHub
         </a>
       </div>
+
       <p className="text-sm">
         &copy; 2025 IITB Power Systems Lab. All rights reserved.
       </p>
+
+      {/* New Address and Phone Number after copyright */}
+      <div className="mt-4 text-sm">
+        <p>
+          Address: Infinity Corridor, Academic Section, IIT Area, Powai, Mumbai
+        </p>
+        <p>Phone: +91 22 2576 7401</p>
+      </div>
     </div>
   </footer>
 );
