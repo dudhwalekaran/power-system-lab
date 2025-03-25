@@ -14,7 +14,7 @@ export default function CurrentStudents() {
     },
     {
       name: "Henil Shah",
-      degree: "phD in Power system",
+      degree: "PhD in Power system",
       project: "Design and Testing of Linear Electric Motor",
       email: "not available",
       LinkedIn: "https://www.linkedin.com/in/henil-shah-3a958b184/",
@@ -30,7 +30,7 @@ export default function CurrentStudents() {
     },
     {
       name: "Suraj S",
-      degree: "phD in Electrical and Electronics engineering",
+      degree: "PhD in Electrical and Electronics engineering",
       project: "Modified Photovoltaic Electric Spring",
       email: "not available",
       LinkedIn: "https://www.linkedin.com/in/suraj-s-a81aa61b3/",
@@ -53,7 +53,7 @@ export default function CurrentStudents() {
       image: "/students/disha.jpeg", // Replace with actual image URL
     },
     {
-      name: "Mrinal Kanta Dey",
+      name: "Mrinal Kanti Dey",
       degree: "PhD in Power system",
       project: "not available ",
       email: "not available",
