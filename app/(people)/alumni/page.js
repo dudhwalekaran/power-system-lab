@@ -24,7 +24,7 @@ export default function AlumniStudents() {
     },
     {
       name: "Dr. Kevin Gujjar",
-      degree: "phD in Electrical Engineering",
+      degree: "PhD in Electrical Engineering",
       graduationYear: "2023",
       currentPosition: "R&D Senior Engineer at Hitachi Energy",
       subject: "Stability Analysis and Design of Wide-Area Damping Controllers",
@@ -33,7 +33,7 @@ export default function AlumniStudents() {
     },
     {
       name: "Dr. Kaustav Dey",
-      degree: "phD in Electrical Engineering",
+      degree: "PhD in Electrical Engineering",
       graduationYear: "2022",
       currentPosition: "L&T Technology Services",
       subject: "Power electronics and power system",
@@ -69,7 +69,7 @@ export default function AlumniStudents() {
     },
     {
       name: "Dr. Ashwin Damle",
-      degree: "phD in Electrical Engineering",
+      degree: "PhD in Electrical Engineering",
       graduationYear: "2011",
       currentPosition: "Director at Nayak Power Systems Pvt. Ltd.",
       subject: "Power electronics and Power system",
@@ -78,7 +78,7 @@ export default function AlumniStudents() {
     },
     {
       name: "Dr. Elizabeth Cheriyan",
-      degree: "phD in Electrical Engineering",
+      degree: "PhD in Electrical Engineering",
       graduationYear: "2011",
       currentPosition: "Power electronics",
       subject: "Specialized in Power and Energy Systems",
@@ -87,7 +87,7 @@ export default function AlumniStudents() {
     },
     {
       name: "Dr. Shilpi Kedia",
-      degree: "phD in Electrical Engineering",
+      degree: "PhD in Electrical Engineering",
       graduationYear: "2024",
       currentPosition: "not available",
       subject: "High power electronics converter",
