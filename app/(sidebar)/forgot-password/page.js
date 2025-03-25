@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
-export default function ForgotPassword() {
+function ForgotPasswordComponent() {
   const [formData, setFormData] = useState({ newPassword: '', repeatPassword: '' });
   const [message, setMessage] = useState('');
   const searchParams = useSearchParams();
@@ -63,5 +63,13 @@ export default function ForgotPassword() {
         {message && <p className="text-center mt-4">{message}</p>}
       </div>
     </div>
+  );
+}
+
+export default function ForgotPasswordPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ForgotPasswordComponent />
+    </Suspense>
   );
 }
