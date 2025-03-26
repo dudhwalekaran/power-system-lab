@@ -226,7 +226,7 @@ const Footer = () => (
         <p>
           Address: Infinity Corridor, Academic Section, IIT Area, Powai, Mumbai
         </p>
-        <p>Phone: +91 22 2576 7401</p>
+        <p>Phone: +91 22 2159 3505</p>
       </div>
     </div>
   </footer>
