@@ -13,7 +13,7 @@ const labMembers = [
     linkedin: 'https://www.linkedin.com/in/k-navaneeth-a26993192/',
   },
   {
-    name: 'Harshala Ranade',
+    name: 'Harshala Kanade',
     title: 'Technical Support',
     bio: '',
     email: 'Not Available',
