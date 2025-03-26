@@ -14,7 +14,7 @@ const labMembers = [
   },
   {
     name: 'Harshala Kanade',
-    title: 'Technical Support',
+    title: 'Senior Project Assistant',
     bio: '',
     email: 'Not Available',
     image: '/staff/harshala.jpg', // Replace with actual path
