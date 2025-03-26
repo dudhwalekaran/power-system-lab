@@ -100,12 +100,6 @@ export default function Home() {
             IIT Bombay - Leading Innovation in Power Systems and Electrical
             Engineering
           </p>
-          <Link
-            href="#research"
-            className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition duration-300 animate-fade-in-delay-2"
-          >
-            Explore Research
-          </Link>
         </div>
       </section>
 
