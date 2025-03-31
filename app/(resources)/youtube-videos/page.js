@@ -9,18 +9,34 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const videosPerPage = 5; // Show 5 videos at a time
+  const [videosPerPage, setVideosPerPage] = useState(calculateVideosPerPage()); // Dynamic videos per page
 
   // Playlist name mapping for renaming tabs
   const playlistNameMapping = {
     "ARPIT Videos": "Custom Name Here",
   };
 
-  // Function to get mapped playlist name
-  const getMappedPlaylistName = (originalName) => {
-    return playlistNameMapping[originalName] || originalName;
-  };
+  // Function to calculate videos per page based on screen height
+  function calculateVideosPerPage() {
+    const viewportHeight = window.innerHeight;
+    const videoItemHeight = 60; // Approximate height of each video item in pixels (adjust based on your CSS)
+    const headerFooterHeight = 200; // Approximate height of header, footer, and padding (adjust as needed)
+    const availableHeight = viewportHeight - headerFooterHeight;
+    const videosToShow = Math.floor(availableHeight / videoItemHeight);
+    return Math.max(1, videosToShow); // Ensure at least 1 video is shown
+  }
 
+  // Update videosPerPage on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setVideosPerPage(calculateVideosPerPage());
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize); // Cleanup on unmount
+  }, []);
+
+  // Fetch videos
   useEffect(() => {
     async function fetchVideos() {
       try {
@@ -102,7 +118,7 @@ export default function Home() {
             <div
               className="flex space-x-4 overflow-x-auto scrollbar-hide"
               style={{
-                maxWidth: "100%", // Ensure container doesn't exceed parent width
+                maxWidth: "100%",
                 scrollBehavior: "smooth",
               }}
             >
@@ -119,7 +135,7 @@ export default function Home() {
                       : "bg-gray-200 text-gray-700 hover:bg-teal-500"
                   }`}
                   style={{
-                    minWidth: "calc(20% - 1rem)", // Ensure 5 tabs fit within the container (20% each minus spacing)
+                    minWidth: "calc(20% - 1rem)",
                   }}
                 >
                   {playlistNameMapping[playlist] || playlist}
